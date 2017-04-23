@@ -1,0 +1,13 @@
+.table {
+  display: table;
+  margin: 10px 10px 10px 0;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  padding: 10px;
+}

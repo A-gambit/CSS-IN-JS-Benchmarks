@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    "transform-class-properties",
+    "styled-jsx/babel"
+  ],
+  "presets": [
+    ["es2015", { "modules": false }],
+    "react"
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        "react-hmre"
+      ]
+    }
+  }
+}
