@@ -8,7 +8,7 @@ Big Table examples, use:
 - react + css
 - aphrodite
 - glamorous
-- jss
+- react-jss
 - radium
 - styld (jss)
 - styled-components
@@ -29,7 +29,7 @@ Average results of table where all styles use css:
 |:------------------------------------|:-------------|
 |  styletron                          |  76,65022    |
 |  glamorous                          |  200,1468    |
-|  jss                                |  232,3857    |
+|  react-jss                          |  232,3857    |
 |  styled (jss)                       |  248,6909    |
 |  glamorous + glamour css            |  305,2877    |
 |  styled-components v2 decouple-cell |  4234,9811   |
