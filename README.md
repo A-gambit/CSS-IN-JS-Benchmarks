@@ -61,7 +61,8 @@ Here is a little contributing guild:
 The benchmarks are not automatically right now :( 
 Your help with automation is appreciated.
 
-So you have run tests in the browser it manually. The example of the test is [here](https://github.com/A-gambit/CSS-IN-JS-Benchmarks/blob/a4d3b3244159dacedb3f3b62be1801363f98bc1b/packages/big-table-test/index.js#L7-L7). You have to run script ten times for five tests. Each test should be in the new window. Example of calculation is [here](https://docs.google.com/spreadsheets/d/1kcl_bZpZ63LQiJNTqCzOAgc5TWe_cHPur_f3GpvtqJI/edit?usp=sharing).
+So you have run tests manually in the browser. The example of the test is [here](https://github.com/A-gambit/CSS-IN-JS-Benchmarks/blob/a4d3b3244159dacedb3f3b62be1801363f98bc1b/packages/big-table-test/index.js#L7-L7). 
+You have to run script each of five tests for ten times. Each test should be in the new window. Example of calculation is [here](https://docs.google.com/spreadsheets/d/1kcl_bZpZ63LQiJNTqCzOAgc5TWe_cHPur_f3GpvtqJI/edit?usp=sharing).
 
 Add your favorite CSS in JS implementation!
 Your contributions and suggestions are heartily welcome. =^.^=

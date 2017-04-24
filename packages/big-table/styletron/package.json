@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "preinstall": "cd ../../big-table-utils && (yarn || npm install) && npm run build",
+    "postinstall": "npm i big-table-utils",
     "start": "webpack-dev-server",
     "prod": "cross-env NODE_ENV=production webpack-dev-server --env.prod=true",
     "build": "cross-env NODE_ENV=production webpack --env.prod=true"
@@ -19,14 +21,14 @@
     "cross-env": "3.1.4",
     "file-loader": "0.10.1",
     "webpack": "2.2.1",
-    "webpack-dev-server": "2.4.1",
-    "big-table-utils": "../../big-table-utils"
+    "webpack-dev-server": "2.4.1"
   },
   "dependencies": {
     "babel-runtime": "6.23.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "styletron-client": "2.5.1",
-    "styletron-react": "2.5.3"
+    "styletron-react": "2.5.3",
+    "big-table-utils": "file:../../big-table-utils"
   }
 }
