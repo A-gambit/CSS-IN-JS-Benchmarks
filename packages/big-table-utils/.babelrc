@@ -4,7 +4,9 @@
     "react"
   ],
   "plugins": [
-    "babel-plugin-transform-class-properties",
-    "babel-plugin-add-module-exports"
+    "transform-class-properties",
+    "transform-async-to-generator",
+    "transform-regenerator",
+    "transform-runtime"
   ]
 }

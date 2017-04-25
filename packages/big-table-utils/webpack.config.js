@@ -1,16 +1,10 @@
 const webpack = require('webpack');
-const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 const path = require('path');
-const env  = require('yargs').argv.env; // use --env with webpack 2
-
 
 const sourcePath = path.join(__dirname, './src');
 const libraryName = 'index';
 
-let plugins = [],
- outputFile = libraryName + '.js';
-
-plugins.push(new UglifyJsPlugin({ minimize: true }));
+let outputFile = libraryName + '.js';
 
 const config = {
   entry: __dirname + '/src/index.js',
@@ -37,8 +31,7 @@ const config = {
       sourcePath
     ],
     extensions: ['.json', '.js']
-  },
-  plugins: plugins
+  }
 };
 
 module.exports = config;

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "preinstall": "cd ../../../../big-table-utils && (yarn || npm install) && npm run build",
-    "postinstall": "npm i big-table-utils",
+	"postinstall": "npm i big-table-utils",
     "start": "webpack-dev-server",
     "prod": "cross-env NODE_ENV=production webpack-dev-server --env.prod=true",
     "build": "cross-env NODE_ENV=production webpack --env.prod=true"
@@ -29,5 +29,9 @@
     "react-dom": "15.4.2",
     "styled-components": "2.0.0-15",
     "big-table-utils": "file:../../../../big-table-utils"
+  },
+  "benchmarks": {
+    "name": "styled-components v2",
+    "useCSS": true
   }
 }

@@ -30,6 +30,50 @@ export default class App extends React.Component {
     };
   }
 
+  componentWillMount() {
+    if (document.location.search.includes('test=true')) {
+      performance.mark('startMount');
+    }
+  }
+
+  async runTestRerender() {
+    const input = document.querySelector('input');
+    for (let i = 0; i < 10; i++) {
+      await new Promise(resolve => {
+        performance.mark('startRerender' + i);
+        input.click();
+
+        setTimeout(() => {
+          setTimeout(() => {
+            performance.mark('endRerender' + i);
+            performance.measure('measureRerender' + i, 'startRerender' + i, 'endRerender' + i);
+            resolve();
+          }, 0)
+        }, 0);
+      });
+    }
+  }
+
+  componentDidMount() {
+    if (!document.location.search.includes('test=true')) {
+      return
+    }
+    performance.mark('endMount');
+    performance.measure('measureMount', 'startMount', 'endMount');
+
+    if (document.location.search.includes('butch=true')) {
+      return this.runTestRerender()
+    }
+
+    const input = document.querySelector('input');
+    performance.mark('startRerender');
+    input.click();
+    setTimeout(() => {
+      performance.mark('endRerender');
+      performance.measure('measureRerender', 'startRerender', 'endRerender');
+    }, 0);
+  }
+
   handleClick = () => {
     this.setState({table: getTable()})
   }
@@ -48,3 +92,4 @@ export default class App extends React.Component {
     );
   }
 };
+

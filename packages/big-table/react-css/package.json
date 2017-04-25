@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "cd ../../big-table-utils && (yarn || npm install) && npm run build",
-    "postinstall": "npm i big-table-utils",
+	"postinstall": "npm i big-table-utils",
     "start": "webpack-dev-server",
     "prod": "cross-env NODE_ENV=production webpack-dev-server --env.prod=true",
     "build": "cross-env NODE_ENV=production webpack --env.prod=true"
@@ -31,5 +31,10 @@
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "big-table-utils": "file:../../big-table-utils"
+  },
+  "benchmarks": {
+    "name": "react + css",
+    "useInlineStyles": true,
+    "useCSS": true
   }
 }

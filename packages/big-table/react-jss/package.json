@@ -30,5 +30,9 @@
     "react-dom": "15.4.2",
     "react-jss": "5.4.1",
     "big-table-utils": "file:../../big-table-utils"
+  },
+  "benchmarks": {
+    "name": "react-jss",
+    "useCSS": true
   }
 }

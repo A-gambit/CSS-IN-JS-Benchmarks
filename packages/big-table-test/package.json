@@ -1,0 +1,16 @@
+{
+  "name": "big-table-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:withoutInstall": "WITHOUT_INSTALL=true node index.js"
+  },
+  "author": "A-gambit",
+  "devDependencies": {
+    "connect": "3.6.1",
+    "lighthouse": "1.6.5",
+    "serve-static": "1.12.1",
+    "shelljs": "0.7.7"
+  }
+}
