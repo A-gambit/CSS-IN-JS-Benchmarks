@@ -168,7 +168,13 @@ async function run() {
     console.log('[LOG]:', res);
   }
 
-  const table = arrayToTable(res, ['Solution', 'Use CSS', 'Use Inline-Styles', 'Mount Time', 'Rerender time']);
+  const sortRes = res.sort((a, b) => a.rerenderDuration - b.rerenderDuration)
+  const table = arrayToTable(
+    sortRes,
+    ['Solution', 'Use CSS', 'Use Inline-Styles', 'Mount Time', 'Rerender time']
+  );
+
   console.log(table);
+
   fs.writeFileSync(__dirname + '/../../RESULT.md', table);
 }
