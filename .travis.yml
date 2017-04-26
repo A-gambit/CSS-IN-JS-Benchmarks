@@ -14,10 +14,10 @@ before_install:
   - docker ps -a
 
 install:
-  - cd packages/big-table-test/ && yarn
+  - cd ./packages/big-table-test/ && yarn
 
 cache:
   yarn: true
 
 script:
-  - cd packages/big-table-test/ && npm run start
+  - cd ./packages/big-table-test/ && npm run start
