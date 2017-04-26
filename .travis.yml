@@ -1,0 +1,23 @@
+sudo: required
+language: node_js
+node_js:
+   - "7"
+
+services:
+  - docker
+
+before_install:
+  - docker pull justinribeiro/chrome-headless
+  - docker run -d --net host justinribeiro/chrome-headless
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=$HOME/.yarn/bin:$PATH
+  - docker ps -a
+
+install:
+  - cd packages/big-table-test/ && yarn
+
+cache:
+  yarn: true
+
+script:
+  - cd packages/big-table-test/ && npm run start

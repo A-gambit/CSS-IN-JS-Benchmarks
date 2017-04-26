@@ -16,11 +16,7 @@ const styles = {
   }
 };
 
-function toPercent(x) {
-  return (x * 100).toFixed(2).toString() + '%';
-}
-
-const TableWrapper = ({ $, table }) => {
+const TableWrapper = ({ $, table, toPercent }) => {
   const { Table, Row, Cell } = $
   return (
     <Table>
