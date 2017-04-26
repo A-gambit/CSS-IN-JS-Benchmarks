@@ -15,7 +15,7 @@ Big Table examples, use:
 - styled-jsx
 - styletron
 
-Average results is [here](https://github.com/A-gambit/CSS-IN-JS-Benchmarks/blob/master/RESULT.md).
+Average results are [here](https://github.com/A-gambit/CSS-IN-JS-Benchmarks/blob/master/RESULT.md).
 
 New demos and benchmarks will be soon :)
 
@@ -27,10 +27,10 @@ Here is a little contributing guild:
 2. Add description for your CSS in JS in package.json. [Example](https://github.com/A-gambit/CSS-IN-JS-Benchmarks/blob/master/packages/big-table/aphrodite/package.json#L33-L37)
 3. Add your solution for [Table.js](https://github.com/A-gambit/CSS-IN-JS-Benchmarks/blob/master/packages/big-table/react/client/Table.js) file.
 4. Run benchmarks:
--- go to big table test.
--- run `npm run start`. 
--- results will be in RESULT.md.
--- update README.md.
+    - go to big table test.
+    - run `npm run start`. 
+    - results will be in RESULT.md.
+    - update README.md.
 
 Add your favorite CSS in JS implementation!
 Your contributions and suggestions are heartily welcome. =^.^=
