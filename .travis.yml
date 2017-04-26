@@ -20,4 +20,4 @@ cache:
   yarn: true
 
 script:
-  - cd ./packages/big-table-test/ && npm run start
+  - npm run start
