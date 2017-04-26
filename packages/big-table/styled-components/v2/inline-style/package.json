@@ -4,7 +4,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "preinstall": "cd ../../../../big-table-utils && (yarn || npm install) && npm run build && sleep",
+    "preinstall": "cd ../../../../big-table-utils && (yarn || npm install) && npm run build",
+    "postinstall": "npm i big-table-utils",
     "start": "webpack-dev-server",
     "prod": "cross-env NODE_ENV=production webpack-dev-server --env.prod=true",
     "build": "cross-env NODE_ENV=production webpack --env.prod=true"

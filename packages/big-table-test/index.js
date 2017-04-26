@@ -78,9 +78,10 @@ async function runTestCase(url) {
       mountDuration.push(values[2].duration);
       let curRerenderDuration = []
       for (let i = 3; i < values.length; i++) {
-        if (values[i].duration) {
-          curRerenderDuration.push(values[i].duration);
+        if (!values[i].duration) {
+          continue
         }
+        curRerenderDuration.push(values[i].duration);
       }
       if (curRerenderDuration.length) {
         rerenderDuration.push(getAverageValue(curRerenderDuration));
@@ -105,19 +106,19 @@ function getIcon(value) {
   return value ? '+' : '-'
 }
 
-function format(number) {
+function format(value) {
   return value.toLocaleString(undefined, {maximumFractionDigits: 2});
 }
 
 function arrayToTable (array, cols) {
-  const nextLine = '\r\n'
-  const nextCol = ' | '
+  const nextLine = '\r\n';
+  const nextCol = ' | ';
 
-  let table = '## Results:' + nextLine + nextLine
-  table += cols.join(nextCol)
-  table += nextLine
-  table += cols.map(() => ':---').join(nextCol)
-  table += nextLine
+  let table = '## Results:' + nextLine + nextLine;
+  table += cols.join(nextCol);
+  table += nextLine;
+  table += cols.map(() => ':---').join(nextCol);
+  table += nextLine;
   array.forEach(item => {
     table += [
       item.name,
@@ -125,9 +126,9 @@ function arrayToTable (array, cols) {
       getIcon(item.useInlineStyles),
       format(item.mountDuration),
       format(item.rerenderDuration)
-    ].join(nextCol) + nextLine
+    ].join(nextCol) + nextLine;
   })
-  return table
+  return table;
 }
 
 function getPackageInfo(path) {
@@ -135,8 +136,18 @@ function getPackageInfo(path) {
   return json.benchmarks;
 }
 
+function writeResults(res) {
+  const sortRes = res.sort((a, b) => a.rerenderDuration - b.rerenderDuration);
+  const table = arrayToTable(
+    sortRes,
+    ['Solution', 'Use CSS', 'Use Inline-Styles', 'Mount Time', 'Rerender time']
+  );
+  console.log(table);
+  fs.writeFileSync(__dirname + '/../../RESULT.md', table);
+}
+
 async function run() {
-  let res = []
+  let res = [];
 
   const port = 3000;
   const rootPath = path.join(__dirname, '../big-table');
@@ -176,13 +187,5 @@ async function run() {
     console.log('[LOG]:', res);
   }
 
-  const sortRes = res.sort((a, b) => a.rerenderDuration - b.rerenderDuration)
-  const table = arrayToTable(
-    sortRes,
-    ['Solution', 'Use CSS', 'Use Inline-Styles', 'Mount Time', 'Rerender time']
-  );
-
-  console.log(table);
-
-  fs.writeFileSync(__dirname + '/../../RESULT.md', table);
+  writeResults(res);
 }

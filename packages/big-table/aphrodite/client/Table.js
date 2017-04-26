@@ -18,10 +18,10 @@ const styles = StyleSheet.create({
 const Table = ({ table, toPercent }) =>
   <div className={css(styles.table)}>
     {
-      table.map((row, i) => 
+      table.map((row, i) =>
         <div className={css(styles.row)} key={i}>
-          { 
-            row.map((x, j) => 
+          {
+            row.map((x, j) =>
               <div
                 key={`${i}${j}`}
                 className={css(styles.cell)}
