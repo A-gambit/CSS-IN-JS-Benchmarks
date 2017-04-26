@@ -105,6 +105,10 @@ function getIcon(value) {
   return value ? '+' : '-'
 }
 
+function format(number) {
+  return value.toLocaleString(undefined, {maximumFractionDigits: 2});
+}
+
 function arrayToTable (array, cols) {
   const nextLine = '\r\n'
   const nextCol = ' | '
@@ -116,7 +120,11 @@ function arrayToTable (array, cols) {
   table += nextLine
   array.forEach(item => {
     table += [
-      item.name, getIcon(item.useCSS), getIcon(item.useInlineStyles), item.mountDuration, item.rerenderDuration
+      item.name,
+      getIcon(item.useCSS),
+      getIcon(item.useInlineStyles),
+      format(item.mountDuration),
+      format(item.rerenderDuration)
     ].join(nextCol) + nextLine
   })
   return table
