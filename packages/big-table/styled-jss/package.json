@@ -28,7 +28,7 @@
     "big-table-utils": "file:../../big-table-utils",
     "react": "15.4.2",
     "react-dom": "15.4.2",
-    "styled-jss": "0.5.2"
+    "styled-jss": "0.6.0"
   },
   "benchmarks": {
     "name": "styled-jss",
