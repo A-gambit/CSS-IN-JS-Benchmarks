@@ -27,4 +27,12 @@ script:
 
 after_success:
   - cd ../../
-  - ./deploy.sh
+  - git config user.name "A-gambit"
+  - git config user.email "a.gambit.gregory@gmail.com"
+  - git config user.password $GIT_TOKEN
+  - git remote add upstream "https://$GIT_TOKEN@github.com/A-gambit/CSS-IN-JS-Benchmarks.git"
+  - git fetch upstream
+  - git reset upstream/$BRANCH
+  - git add RESULT.md
+  - git commit -m 'Travis CI Automaticaly Benchmarks'
+  - git push -q upstream HEAD:$BRANCH
