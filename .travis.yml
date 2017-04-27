@@ -32,4 +32,4 @@ after_success:
   - ssh-add .travis/deploy_key.pem
   - git add RESULT.md
   - git commit -m 'Travis CI Automaticaly Benchmarks'
-  - git push origin -b $BRANCH
+  - git push origin $BRANCH
