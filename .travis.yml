@@ -29,4 +29,4 @@ after_success:
   - cd ../../
   - git add RESULT.md
   - git commit -m 'Travis CI Automaticaly Benchmarks'
-  - git push
+  - git push HEAD:$BRANCH
