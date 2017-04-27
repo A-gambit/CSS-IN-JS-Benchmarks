@@ -28,6 +28,9 @@ script:
 
 after_success:
   - cd ../../
+  - git config user.name "A-gambit"
+  - git config user.email "a.gambit.gregory@gmail.com"
+  - git config user.password $GIT_TOKEN
   - git add RESULT.md
   - git commit -m 'Travis CI Automaticaly Benchmarks'
   - git push origin HEAD:$BRANCH
