@@ -14,6 +14,8 @@ before_install:
   - docker ps -a
   - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
   - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
+  - git config user.name "Travis CI"
+  - git config user.email "$COMMIT_AUTHOR_EMAIL"
 
 install:
   - cd ./packages/big-table-test/ && yarn

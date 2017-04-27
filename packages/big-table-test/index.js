@@ -151,7 +151,7 @@ async function run() {
 
   const port = 3000;
   const rootPath = path.join(__dirname, '../big-table');
-  const packages = getPackageList(rootPath, rootPath.length + 1);
+  const packages = [getPackageList(rootPath, rootPath.length + 1)[0]];
 
   shell.config.verbose = true;
 
