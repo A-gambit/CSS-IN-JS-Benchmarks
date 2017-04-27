@@ -2,4 +2,4 @@
 
 Solution | Use CSS | Use Inline-Styles | Mount Time (ms) | Rerender time (ms)
 :--- | :--- | :--- | :--- | :---
-aphrodite | + | + | 111.14 | 63.14
+aphrodite | + | + | 100.65 | 62.54
