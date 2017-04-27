@@ -27,9 +27,6 @@ script:
 
 after_success:
   - cd ../../
-  - eval "$(ssh-agent -s)"
-  - chmod 600 .travis/deploy_key.pem
-  - ssh-add .travis/deploy_key.pem
   - git add RESULT.md
   - git commit -m 'Travis CI Automaticaly Benchmarks'
-  - git push origin $BRANCH
+  - git push
