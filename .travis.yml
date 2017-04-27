@@ -21,3 +21,6 @@ cache:
 
 script:
   - npm run start
+  - git add RESULT.md
+  - git commit -m 'Travis CI Automaticaly Benchmarks'
+  - git push
