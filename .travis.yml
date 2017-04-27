@@ -12,6 +12,8 @@ before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH=$HOME/.yarn/bin:$PATH
   - docker ps -a
+  - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
+  - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
 
 install:
   - cd ./packages/big-table-test/ && yarn
@@ -21,6 +23,9 @@ cache:
 
 script:
   - npm run start
+
+after_script:
+  - cd ../../
   - git add RESULT.md
   - git commit -m 'Travis CI Automaticaly Benchmarks'
-  - git push
+  - git push origin HEAD:$BRANCH
