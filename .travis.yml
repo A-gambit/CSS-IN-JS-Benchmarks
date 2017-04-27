@@ -34,5 +34,5 @@ after_success:
   - git fetch upstream
   - git reset upstream/$BRANCH
   - git add RESULT.md
-  - git commit -m 'Travis CI Automaticaly Benchmarks'
+  - git commit -m 'Travis CI Automaticaly Benchmarks [ci skip]'
   - git push -q upstream HEAD:$BRANCH
