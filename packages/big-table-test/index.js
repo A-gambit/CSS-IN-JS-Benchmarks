@@ -140,7 +140,7 @@ function writeResults(res) {
   const sortRes = res.sort((a, b) => a.rerenderDuration - b.rerenderDuration);
   const table = arrayToTable(
     sortRes,
-    ['Solution', 'Use CSS', 'Use Inline-Styles', 'Mount Time', 'Rerender time']
+    ['Solution', 'Use CSS', 'Use Inline-Styles', 'Mount Time (ms)', 'Rerender Time (ms)']
   );
   console.log(table);
   fs.writeFileSync(__dirname + '/../../RESULT.md', table);
