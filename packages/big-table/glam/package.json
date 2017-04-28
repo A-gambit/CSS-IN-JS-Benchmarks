@@ -33,7 +33,7 @@
     "react-dom": "15.4.2"
   },
   "benchmarks": {
-    "name": "react",
+    "name": "glam",
     "useCSS": true
   }
 }
