@@ -34,6 +34,7 @@
   "benchmarks": {
     "name": "styled-components v2 + plugin - inline-styles",
     "useInlineStyles": true,
-    "useCSS": true
+    "useCSS": true,
+    "link": "https://github.com/styled-components/styled-components/tree/v2"
   }
 }

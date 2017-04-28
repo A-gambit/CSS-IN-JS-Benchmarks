@@ -30,6 +30,7 @@
     "big-table-utils": "file:../../big-table-utils"
   },
   "benchmarks": {
-    "name": "react"
+    "name": "react (without styles)",
+    "link": "https://github.com/facebook/react"
   }
 }

@@ -114,14 +114,14 @@ function arrayToTable (array, cols) {
   const nextLine = '\r\n';
   const nextCol = ' | ';
 
-  let table = '## Results:' + nextLine + nextLine;
+  let table = `## Results:${nextLine}*(sorted by rerender time)*${nextLine}${nextLine}`;
   table += cols.join(nextCol);
   table += nextLine;
   table += cols.map(() => ':---').join(nextCol);
   table += nextLine;
   array.forEach(item => {
     table += [
-      item.name,
+      item.link ? `[${item.name}](${item.link})` : item.name,
       getIcon(item.useCSS),
       getIcon(item.useInlineStyles),
       format(item.mountDuration),
@@ -179,6 +179,7 @@ async function run() {
       name: packageInfo.name,
       useInlineStyles: packageInfo.useInlineStyles || false,
       useCSS: packageInfo.useCSS || false,
+      link: packageInfo.link,
       rerenderDuration: packageRes.rerenderDuration,
       mountDuration: packageRes.mountDuration
     });
