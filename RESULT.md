@@ -1,24 +1,25 @@
 ## Results:
 
-Solution | Use CSS | Use Inline-Styles | Mount Time (ms) | Rerender time (ms)
+Solution | Use CSS | Use Inline-Styles | Mount Time (ms) | Rerender Time (ms)
 :--- | :--- | :--- | :--- | :---
-react | - | - | 52.89 | 47.77
-react + css | + | + | 106.02 | 75.81
-aphrodite | + | + | 121.44 | 82.35
-styled-jsx | + | + | 119.94 | 92.83
-styled-components v1 + inline-styles | + | + | 216.77 | 158.32
-radium | - | + | 206.7 | 166.81
-styled-components v2 + inline-styles | + | + | 249.33 | 179.11
-styled-jss | + | - | 338.81 | 187.26
-styled-components v2 + plugin - inline-styles | + | + | 231.73 | 194.96
-styletron | + | - | 178.33 | 202.22
-react-jss | + | - | 348.42 | 359.02
-glamorous | + | - | 370.42 | 393.11
-styld | + | - | 347.83 | 399.48
-glamorous + glamour css | + | - | 490.85 | 468.59
-styled-components v2 decouple-cell | + | - | 1,305.84 | 2,653.75
-styled-components v2 + plugin - decouple-cell | + | - | 1,336.33 | 2,701.5
-styled-components v2 + plugin | + | - | 1,785.21 | 3,897.1
-styled-components v2 | + | - | 1,742.67 | 3,905.59
-styled-components v1 | + | - | 1,894.9 | 4,292.97
-styled-components v1 decouple-cell | + | - | 1,882.69 | 4,415.42
+react | - | - | 48.38 | 39.61
+react + css | + | + | 95.21 | 59.12
+aphrodite | + | + | 111.47 | 64.14
+glam | + | - | 88.4 | 73.84
+styled-jsx | + | + | 101.2 | 91.47
+radium | - | + | 186.12 | 127
+styled-components v1 + inline-styles | + | + | 203.87 | 132.1
+styled-components v2 + inline-styles | + | + | 213.29 | 161.88
+styled-jss | + | - | 314.33 | 164.77
+styletron | + | - | 178.94 | 184.57
+styled-components v2 + plugin - inline-styles | + | + | 256.75 | 195
+react-jss | + | - | 316.05 | 348.43
+glamorous | + | - | 379.44 | 365.05
+styld | + | - | 307.5 | 375.34
+glamorous + glamour css | + | - | 452.95 | 458.19
+styled-components v2 decouple-cell | + | - | 1,304.9 | 2,654.87
+styled-components v2 + plugin - decouple-cell | + | - | 1,322.96 | 2,721.7
+styled-components v2 | + | - | 1,796.29 | 3,979.18
+styled-components v2 + plugin | + | - | 1,762.34 | 4,000.56
+styled-components v1 | + | - | 1,803.24 | 4,305.22
+styled-components v1 decouple-cell | + | - | 1,844.42 | 4,394.33
