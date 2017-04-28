@@ -32,6 +32,7 @@
   },
   "benchmarks": {
     "name": "radium",
-    "useInlineStyles": true
+    "useInlineStyles": true,
+    "link": "https://github.com/FormidableLabs/radium"
   }
 }

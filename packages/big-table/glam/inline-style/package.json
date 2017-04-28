@@ -1,10 +1,10 @@
 {
-  "name": "table-styled-components-big-table",
+  "name": "table-react-big-table",
   "version": "1.0.0",
   "private": true,
   "main": "index.js",
   "scripts": {
-    "preinstall": "cd ../../../../big-table-utils && (yarn || npm install) && npm run build",
+    "preinstall": "cd ../../../big-table-utils && (yarn || npm install) && npm run build",
     "postinstall": "npm i big-table-utils",
     "start": "webpack-dev-server",
     "prod": "cross-env NODE_ENV=production webpack-dev-server --env.prod=true",
@@ -24,16 +24,18 @@
     "webpack-dev-server": "2.4.1"
   },
   "dependencies": {
+    "@threepointone/glam": "1.0.6",
     "babel-runtime": "6.23.0",
+    "big-table-utils": "file:../../../big-table-utils",
+    "postcss-cssnext": "2.10.0",
+    "postcss-loader": "1.3.3",
     "react": "15.4.2",
-    "react-dom": "15.4.2",
-    "styled-components": "2.0.0-15",
-    "big-table-utils": "file:../../../../big-table-utils"
+    "react-dom": "15.4.2"
   },
   "benchmarks": {
-    "name": "styled-components v2 + inline-styles",
+    "name": "glam + inline-style",
     "useInlineStyles": true,
     "useCSS": true,
-    "link": "https://github.com/styled-components/styled-components/tree/v2"
+    "link": "https://github.com/threepointone/glam"
   }
 }

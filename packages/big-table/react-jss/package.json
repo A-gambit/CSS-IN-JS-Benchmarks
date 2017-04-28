@@ -33,6 +33,7 @@
   },
   "benchmarks": {
     "name": "react-jss",
-    "useCSS": true
+    "useCSS": true,
+    "link": "https://github.com/cssinjs/react-jss"
   }
 }

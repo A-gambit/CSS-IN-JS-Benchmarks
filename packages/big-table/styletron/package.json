@@ -32,6 +32,7 @@
   },
   "benchmarks": {
     "name": "styletron",
-    "useCSS": true
+    "useCSS": true,
+    "link": "https://github.com/rtsao/styletron"
   }
 }

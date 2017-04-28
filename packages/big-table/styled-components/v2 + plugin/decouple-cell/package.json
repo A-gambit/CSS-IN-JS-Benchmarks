@@ -33,6 +33,7 @@
   },
   "benchmarks": {
     "name": "styled-components v2 + plugin - decouple-cell",
-    "useCSS": true
+    "useCSS": true,
+    "link": "https://github.com/styled-components/styled-components/tree/v2"
   }
 }

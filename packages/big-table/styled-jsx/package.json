@@ -33,6 +33,7 @@
   "benchmarks": {
     "name": "styled-jsx",
     "useInlineStyles": true,
-    "useCSS": true
+    "useCSS": true,
+    "link": "https://github.com/zeit/styled-jsx"
   }
 }

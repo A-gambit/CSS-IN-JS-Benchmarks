@@ -33,6 +33,7 @@
   "benchmarks": {
     "name": "styled-components v1 + inline-styles",
     "useInlineStyles": true,
-    "useCSS": true
+    "useCSS": true,
+    "link": "https://github.com/styled-components/styled-components"
   }
 }
