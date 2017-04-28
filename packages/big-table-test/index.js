@@ -114,7 +114,7 @@ function arrayToTable (array, cols) {
   const nextLine = '\r\n';
   const nextCol = ' | ';
 
-  let table = '## Results: *(sorted by rerender time)*' + nextLine + nextLine;
+  let table = `## Results:${nextLine}*(sorted by rerender time)*${nextLine}${nextLine}`;
   table += cols.join(nextCol);
   table += nextLine;
   table += cols.map(() => ':---').join(nextCol);
@@ -179,6 +179,7 @@ async function run() {
       name: packageInfo.name,
       useInlineStyles: packageInfo.useInlineStyles || false,
       useCSS: packageInfo.useCSS || false,
+      link: packageInfo.link,
       rerenderDuration: packageRes.rerenderDuration,
       mountDuration: packageRes.mountDuration
     });
