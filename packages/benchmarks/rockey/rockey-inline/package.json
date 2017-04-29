@@ -1,0 +1,24 @@
+{
+  "name": "table-rockey-inline-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package rockey/rockey-inline",
+    "build": "devBuild --package rockey/rockey-inline"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "big-table-utils": "1.0.0",
+    "rockey-react": "0.0.12-alpha.f87220ea"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "rockey-inline",
+    "useInlineStyles": false,
+    "useCSS": true,
+    "useInlineStyles": true,
+    "link": "https://github.com/tuchk4/rockey"
+  }
+}
