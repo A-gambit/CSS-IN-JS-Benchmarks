@@ -25,7 +25,7 @@ cache:
   yarn: true
 
 script:
-  - npm run benchmark
+  - NODE_ENV=production && npm run benchmark
 
 after_success:
   - git config user.name "A-gambit"
