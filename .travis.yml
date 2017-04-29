@@ -17,16 +17,16 @@ before_install:
   - git config --list
 
 install:
-  - cd ./packages/big-table-test/ && yarn
+  - npm install
+  - lerna bootstrap
 
 cache:
   yarn: true
 
 script:
-  - npm run start
+  - npm run benchmark
 
 after_success:
-  - cd ../../
   - git config user.name "A-gambit"
   - git config user.email "a.gambit.gregory@gmail.com"
   - git config user.password $GIT_TOKEN
