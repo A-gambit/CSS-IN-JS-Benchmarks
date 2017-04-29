@@ -18,6 +18,7 @@
   "benchmarks": {
     "name": "fela",
     "useInlineStyles": true,
-    "useCSS": true
+    "useCSS": true,
+    "link": "https://github.com/rofrischmann/fela/"
   }
 }

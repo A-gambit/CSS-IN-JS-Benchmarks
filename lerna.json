@@ -18,6 +18,8 @@
     "packages/benchmarks/styled-components/v2-plugin/inline-style",
     "packages/benchmarks/styled-components/v2-plugin/simple",
     "packages/benchmarks/aphrodite",
+    "packages/benchmarks/glam/inline-style",
+    "packages/benchmarks/glam/simple",
     "packages/benchmarks/glamorous/dynamic-styles",
     "packages/benchmarks/glamorous/glamor-css",
     "packages/benchmarks/radium",

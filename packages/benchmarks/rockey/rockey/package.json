@@ -17,6 +17,7 @@
   "benchmarks": {
     "name": "rockey",
     "useInlineStyles": false,
-    "useCSS": true
+    "useCSS": true,
+    "link": "https://github.com/tuchk4/rockey"
   }
 }
