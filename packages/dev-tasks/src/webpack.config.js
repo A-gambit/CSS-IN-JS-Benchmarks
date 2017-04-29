@@ -109,7 +109,7 @@ module.exports = {
     ],
     modules: [
       // path.join(__dirname, '..', '..', packageName, 'node_modules')
-      'node_modules',
+      // 'node_modules',
       path.join(
         __dirname,
         '..',
