@@ -23,7 +23,7 @@ const staticsPath = path.join(
 );
 
 const isProd = process.NODE_ENV === 'production';
-console.log('webpack build with env ', isProd ? chalk.green('production') : chalk.green('development'));
+console.log(`webpack build with env ${isProd ? chalk.green('production') : chalk.green('development')}`);
 
 const plugins = [
   new webpack.optimize.CommonsChunkPlugin({
