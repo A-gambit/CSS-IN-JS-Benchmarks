@@ -1,18 +1,17 @@
-.idea
+# dependencies
+node_modules
 
-packages/*/node_modules
-packages/*/lib
-packages/*/dist
-packages/*/build
-packages/*/static
-packages/*/npm-debug.log*
-packages/*/logs
-packages/*/*.log
+# testing
+/coverage
 
-packages/*/*/node_modules
-packages/*/*/lib
-packages/*/*/dist
-packages/*/*/build
-packages/*/*/statics
-packages/*/*/npm-debug.log*
-packages/*/*/logs
+# production
+build
+lib
+
+# misc
+.DS_Store
+npm-debug.log*
+lerna-debug.log*
+
+# IDE
+.idea/*
