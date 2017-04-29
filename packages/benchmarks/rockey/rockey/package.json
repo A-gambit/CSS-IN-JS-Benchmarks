@@ -1,0 +1,22 @@
+{
+  "name": "table-rockey-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package rockey/rockey",
+    "build": "devBuild --package rockey/rockey"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "big-table-utils": "1.0.0",
+    "rockey-react": "0.0.12-alpha.f87220ea"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "rockey",
+    "useInlineStyles": false,
+    "useCSS": true
+  }
+}

@@ -5,6 +5,8 @@
     "packages/big-table-utils",
     "packages/dev-tasks",
     "packages/benchmarks/fela",
+    "packages/benchmarks/rockey/rockey",
+    "packages/benchmarks/rockey/rockey-speedy",
     "packages/benchmarks/styled-jss",
     "packages/benchmarks/styled-components/v1/decouple-cell",
     "packages/benchmarks/styled-components/v1/inline-style",
