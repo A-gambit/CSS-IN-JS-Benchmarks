@@ -14,24 +14,17 @@ const config = {
     filename: outputFile,
     library: libraryName,
     libraryTarget: 'umd',
-    umdNamedDefine: true
+    umdNamedDefine: true,
   },
   module: {
     rules: [
       {
         test: /(\.jsx|\.js)$/,
         loader: 'babel-loader',
-        exclude: /(node_modules|bower_components)/
-      }
-    ]
-  },
-  resolve: {
-    modules: [
-      path.resolve(__dirname, 'node_modules'),
-      sourcePath
+        exclude: /(node_modules|bower_components)/,
+      },
     ],
-    extensions: ['.json', '.js']
-  }
+  },
 };
 
 module.exports = config;

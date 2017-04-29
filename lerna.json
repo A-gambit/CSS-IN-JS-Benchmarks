@@ -1,0 +1,30 @@
+{
+  "lerna": "2.0.0-rc.3",
+  "packages": [
+    "packages/big-table-test",
+    "packages/big-table-utils",
+    "packages/dev-tasks",
+    "packages/benchmarks/fela",
+    "packages/benchmarks/styled-jss",
+    "packages/benchmarks/styled-components/v1/decouple-cell",
+    "packages/benchmarks/styled-components/v1/inline-style",
+    "packages/benchmarks/styled-components/v1/simple",
+    "packages/benchmarks/styled-components/v2/decouple-cell",
+    "packages/benchmarks/styled-components/v2/inline-style",
+    "packages/benchmarks/styled-components/v2/simple",
+    "packages/benchmarks/styled-components/v2-plugin/decouple-cell",
+    "packages/benchmarks/styled-components/v2-plugin/inline-style",
+    "packages/benchmarks/styled-components/v2-plugin/simple",
+    "packages/benchmarks/aphrodite",
+    "packages/benchmarks/glamorous/dynamic-styles",
+    "packages/benchmarks/glamorous/glamor-css",
+    "packages/benchmarks/radium",
+    "packages/benchmarks/react",
+    "packages/benchmarks/react-css",
+    "packages/benchmarks/react-jss",
+    "packages/benchmarks/styld",
+    "packages/benchmarks/styled-jsx",
+    "packages/benchmarks/styletron"
+  ],
+  "version": "1.0.0"
+}

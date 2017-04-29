@@ -1,0 +1,23 @@
+{
+  "name": "table-fela-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package fela",
+    "build": "devBuild --package fela"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "big-table-utils": "1.0.0",
+    "fela": "^4.3.3",
+    "react-fela": "^4.3.3"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "fela",
+    "useInlineStyles": true,
+    "useCSS": true
+  }
+}

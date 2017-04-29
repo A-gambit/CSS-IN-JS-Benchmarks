@@ -4,33 +4,30 @@ import Styletron from 'styletron-client';
 
 const Table = styled('div', {
   display: 'table',
-  marginTop: '10px'
+  marginTop: '10px',
 });
 
 const Row = styled('div', {
-  display: 'table-row'
+  display: 'table-row',
 });
 
 const Cell = styled('div', props => ({
   display: 'table-cell',
   padding: '10px',
-  background: `rgba(74, 174, 53, ${props.value})`
+  background: `rgba(74, 174, 53, ${props.value})`,
 }));
 
-const TableComponent = ({ table, toPercent }) =>
+const TableComponent = ({ table, toPercent }) => (
   <Table>
-    {
-      table.map((row, i) =>
-        <Row key={i}>
-          {
-            row.map((x, j) =>
-              <Cell key={`${i}${j}`} value={x}>{toPercent(x)}</Cell>
-            )
-          }
-        </Row>
-      )
-    }
+    {table.map((row, i) => (
+      <Row key={i}>
+        {row.map((x, j) => (
+          <Cell key={`${i}${j}`} value={x}>{toPercent(x)}</Cell>
+        ))}
+      </Row>
+    ))}
   </Table>
+);
 
 const styleSheet = document.createElement('style');
 document.head.appendChild(styleSheet);
@@ -42,4 +39,3 @@ export default ({ table, toPercent }) => (
     <TableComponent table={table} toPercent={toPercent} />
   </StyletronProvider>
 );
-

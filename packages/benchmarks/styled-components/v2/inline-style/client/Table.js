@@ -15,22 +15,20 @@ const Cell = styled.div`
   padding: 10px;
 `;
 
-export default ({ table, toPercent }) =>
+export default ({ table, toPercent }) => (
   <Table>
-    {
-      table.map((row, i) =>
-        <Row key={i}>
-          {
-            row.map((x, j) =>
-              <Cell
-                key={`${i}${j}`}
-                value={x}
-                style={{ background: `rgba(74, 174, 53, ${x})` }}>
-                {toPercent(x)}
-              </Cell>
-            )
-          }
-        </Row>
-      )
-    }
+    {table.map((row, i) => (
+      <Row key={i}>
+        {row.map((x, j) => (
+          <Cell
+            key={`${i}${j}`}
+            value={x}
+            style={{ background: `rgba(74, 174, 53, ${x})` }}
+          >
+            {toPercent(x)}
+          </Cell>
+        ))}
+      </Row>
+    ))}
   </Table>
+);

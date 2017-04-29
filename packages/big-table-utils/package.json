@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "webpack --env build"
+    "postinstall": "webpack --hide-modules --env build"
   },
   "license": "MIT",
   "devDependencies": {

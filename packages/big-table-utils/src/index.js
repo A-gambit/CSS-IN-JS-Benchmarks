@@ -32,7 +32,11 @@ async function runTestRerender() {
       setTimeout(() => {
         setTimeout(() => {
           performance.mark('endRerender' + i);
-          performance.measure('measureRerender' + i, 'startRerender' + i, 'endRerender' + i);
+          performance.measure(
+            'measureRerender' + i,
+            'startRerender' + i,
+            'endRerender' + i
+          );
           resolve();
         }, 0);
       }, 0);
@@ -48,13 +52,13 @@ function willMount() {
 
 function didMount() {
   if (!document.location.search.includes('test=true')) {
-    return
+    return;
   }
   performance.mark('endMount');
   performance.measure('measureMount', 'startMount', 'endMount');
 
   if (document.location.search.includes('butch=true')) {
-    return runTestRerender()
+    return runTestRerender();
   }
 
   const input = document.querySelector('input');
@@ -70,34 +74,33 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      table: getTable()
+      table: getTable(),
     };
   }
 
   componentWillMount() {
-    willMount()
+    willMount();
   }
 
   componentDidMount() {
-    didMount()
+    didMount();
   }
 
   handleClick = () => {
-    this.setState({table: getTable()})
-  }
+    this.setState({ table: getTable() });
+  };
 
   render() {
-    const {table: Table} = this.props
+    const { table: Table } = this.props;
     return (
       <div>
         <div>
-          <input type='submit' value='Generate' onClick={this.handleClick} />
+          <input type="submit" value="Generate" onClick={this.handleClick} />
           {' '}
-          <span>{ getUniqueSize(this.state.table) } unique cells</span>
+          <span>{getUniqueSize(this.state.table)} unique cells</span>
         </div>
         <Table table={this.state.table} toPercent={toPercent} />
       </div>
     );
   }
-};
-
+}

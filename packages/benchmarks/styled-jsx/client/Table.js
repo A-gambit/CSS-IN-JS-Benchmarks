@@ -1,24 +1,20 @@
 import React from 'react';
 
-const Table = ({ table, toPercent }) =>
-  <div className='table'>
-    {
-      table.map((row, i) =>
-        <div key={i} className='row'>
-          {
-            row.map((x, j) =>
-              <div
-                key={`${i}${j}`}
-                className='cell'
-                style={{ background: `rgba(74, 174, 53, ${x})` }}
-              >
-                {toPercent(x)}
-              </div>
-            )
-          }
-        </div>
-      )
-    }
+const Table = ({ table, toPercent }) => (
+  <div className="table">
+    {table.map((row, i) => (
+      <div key={i} className="row">
+        {row.map((x, j) => (
+          <div
+            key={`${i}${j}`}
+            className="cell"
+            style={{ background: `rgba(74, 174, 53, ${x})` }}
+          >
+            {toPercent(x)}
+          </div>
+        ))}
+      </div>
+    ))}
     <style jsx>{`
       .table {
         display: table;
@@ -35,5 +31,6 @@ const Table = ({ table, toPercent }) =>
       }
      `}</style>
   </div>
+);
 
 export default Table;

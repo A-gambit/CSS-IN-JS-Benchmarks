@@ -16,17 +16,14 @@ const Cell = styled.div`
   background: rgba(74, 174, 53, ${props => props.value});
 `;
 
-export default ({ table, toPercent }) =>
+export default ({ table, toPercent }) => (
   <Table>
-    {
-      table.map((row, i) =>
-        <Row key={i}>
-          {
-            row.map((x, j) =>
-              <Cell key={`${i}${j}`} value={x}>{toPercent(x)}</Cell>
-            )
-          }
-        </Row>
-      )
-    }
+    {table.map((row, i) => (
+      <Row key={i}>
+        {row.map((x, j) => (
+          <Cell key={`${i}${j}`} value={x}>{toPercent(x)}</Cell>
+        ))}
+      </Row>
+    ))}
   </Table>
+);
