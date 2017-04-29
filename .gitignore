@@ -8,6 +8,7 @@ node_modules
 build
 lib
 static
+etc
 
 # misc
 .DS_Store
