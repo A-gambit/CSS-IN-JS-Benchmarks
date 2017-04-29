@@ -1,0 +1,23 @@
+{
+  "name": "table-glam-simple-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package glam/simple",
+    "build": "devBuild --package glam/simple"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "big-table-utils": "1.0.0",
+    "@threepointone/glam": "1.0.6"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "glam-simple",
+    "useInlineStyles": true,
+    "useCSS": true,
+    "link": "https://github.com/threepointone/glam"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "table-styled-components-big-table-v1-inline-style",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package styled-components/v1/inline-style",
+    "build": "devBuild --package styled-components/v1/inline-style"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "dependencies": {
+    "styled-components": "1.4.4",
+    "big-table-utils": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "styled-components-v1-inline-styles",
+    "useInlineStyles": true,
+    "useCSS": true,
+    "link": "https://github.com/styled-components/styled-components"
+  }
+}

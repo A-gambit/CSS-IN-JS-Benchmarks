@@ -1,0 +1,20 @@
+{
+  "name": "table-react-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package react",
+    "build": "devBuild --package react"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "big-table-utils": "1.0.0"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "react (without styles)",
+    "link": "https://github.com/facebook/react"
+  }
+}

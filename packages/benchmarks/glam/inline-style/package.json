@@ -1,0 +1,23 @@
+{
+  "name": "table-glam-inlint-style-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package glam/inline-style",
+    "build": "devBuild --package glam/inline-style"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "big-table-utils": "1.0.0",
+    "@threepointone/glam": "1.0.6"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "glam-inline-style",
+    "useInlineStyles": true,
+    "useCSS": true,
+    "link": "https://github.com/threepointone/glam"
+  }
+}

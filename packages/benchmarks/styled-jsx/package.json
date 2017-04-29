@@ -1,0 +1,24 @@
+{
+  "name": "table-styled-jsx-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package styled-jsx",
+    "build": "devBuild --package styled-jsx"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "big-table-utils": "1.0.0",
+    "rockey-react": "0.0.11",
+    "styled-jsx": "0.5.7"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "styled-jsx",
+    "useInlineStyles": true,
+    "useCSS": true,
+    "link": "https://github.com/zeit/styled-jsx"
+  }
+}

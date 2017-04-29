@@ -1,0 +1,29 @@
+{
+  "name": "table-react-jss-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package react-jss",
+    "build": "devBuild --package react-jss"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "big-table-utils": "1.0.0",
+    "react-jss": "5.4.1"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "dependencies": {
+    "babel-runtime": "6.23.0",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-jss": "5.4.1",
+    "big-table-utils": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "react-jss",
+    "useCSS": true,
+    "link": "https://github.com/cssinjs/react-jss"
+  }
+}

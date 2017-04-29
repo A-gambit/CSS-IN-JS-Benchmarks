@@ -1,0 +1,23 @@
+{
+  "name": "table-glamourous-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package glamorous/dynamic-styles",
+    "build": "devBuild --package glamorous/dynamic-styles"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "big-table-utils": "1.0.0",
+    "glamor": "2.20.24",
+    "glamorous": "1.0.1"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "glamorous",
+    "useCSS": true,
+    "link": "https://github.com/paypal/glamorous"
+  }
+}

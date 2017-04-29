@@ -1,0 +1,23 @@
+{
+  "name": "table-styltron-big-table",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "devServer --package styletron",
+    "build": "devBuild --package styletron"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "big-table-utils": "1.0.0",
+    "rockey-react": "0.0.11",
+    "styletron-client": "2.5.1",
+    "styletron-react": "2.5.3"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "styletron",
+    "useCSS": true,
+    "link": "https://github.com/rtsao/styletron"
+  }
+}

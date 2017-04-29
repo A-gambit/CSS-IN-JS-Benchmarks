@@ -1,0 +1,23 @@
+{
+  "name": "table-aphrodite-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package aphrodite",
+    "build": "devBuild --package aphrodite"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "big-table-utils": "1.0.0",
+    "aphrodite": "1.2.0"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "aphrodite",
+    "useInlineStyles": true,
+    "useCSS": true,
+    "link": "https://github.com/Khan/aphrodite"
+  }
+}

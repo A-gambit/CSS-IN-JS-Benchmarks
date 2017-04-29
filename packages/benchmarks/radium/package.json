@@ -1,0 +1,22 @@
+{
+  "name": "table-radium-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package radium",
+    "build": "devBuild --package radium"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "big-table-utils": "1.0.0",
+    "radium": "0.18.2"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "radium",
+    "useInlineStyles": true,
+    "link": "https://github.com/FormidableLabs/radium"
+  }
+}

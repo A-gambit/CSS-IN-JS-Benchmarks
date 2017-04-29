@@ -1,0 +1,23 @@
+{
+  "name": "table-styled-components-big-table-v2-plugin-inline-style",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package styled-components/v2-plugin/inline-style",
+    "build": "devBuild --package styled-components/v2-plugin/inline-style"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "dev-tasks": "1.0.0",
+    "babel-plugin-styled-components": "1.1.4"
+  },
+  "dependencies": {
+    "styled-components": "2.0.0-15",
+    "big-table-utils": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "styled-components-v2-plugin-inline-styles",
+    "useInlineStyles": true,
+    "useCSS": true
+  }
+}
