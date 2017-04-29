@@ -1,14 +1,12 @@
 #!/usr/bin/env node
-const { argv } = require('yargs');
 const webpackDevServer = require('webpack-dev-server');
 const webpack = require('webpack');
-
-const webpackConfig = require('./webpack.config.js');
-
-const packageName = argv.package;
+const { argv } = require('yargs');
 
 process.NODE_ENV = 'production';
+const packageName = argv.package;
 
+const webpackConfig = require('./webpack.config.js');
 const compiler = webpack(webpackConfig);
 
 var server = new webpackDevServer(compiler, {

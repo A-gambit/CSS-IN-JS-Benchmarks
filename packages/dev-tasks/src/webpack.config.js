@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const chalk = require('chalk');
 
 const { argv } = require('yargs');
 const packageName = argv.package;
@@ -22,6 +23,7 @@ const staticsPath = path.join(
 );
 
 const isProd = process.NODE_ENV === 'production';
+console.log('webpack build with env ', isProd ? chalk.green('production') : chalk.green('development'));
 
 const plugins = [
   new webpack.optimize.CommonsChunkPlugin({

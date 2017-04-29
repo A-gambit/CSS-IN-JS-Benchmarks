@@ -4,9 +4,10 @@ const path = require('path');
 const webpack = require('webpack');
 const { argv } = require('yargs');
 
-const webpackConfig = require('./webpack.config.js');
-
+process.NODE_ENV = 'production';
 const packageName = argv.package;
+
+const webpackConfig = require('./webpack.config.js');
 const compiler = webpack(webpackConfig);
 
 compiler.run((err, stats) => {
