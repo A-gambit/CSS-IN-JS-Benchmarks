@@ -17,8 +17,9 @@ before_install:
   - git config --list
 
 install:
-  - npm install
+  - npm install lerna
   - lerna bootstrap
+  - npm install
 
 cache:
   yarn: true
