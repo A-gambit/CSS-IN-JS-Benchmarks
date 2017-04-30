@@ -16,7 +16,6 @@
   },
   "benchmarks": {
     "name": "glam-simple",
-    "useInlineStyles": true,
     "useCSS": true,
     "link": "https://github.com/threepointone/glam"
   }
