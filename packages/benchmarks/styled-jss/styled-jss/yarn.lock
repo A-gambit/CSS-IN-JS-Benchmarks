@@ -12,7 +12,7 @@ is-in-browser@1.0.2, is-in-browser@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-in-browser/-/is-in-browser-1.0.2.tgz#f688bea8f1e5aadc3244ebc870d188cfb9b613cf"
 
-is-react-prop@^0.1.1:
+is-react-prop@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/is-react-prop/-/is-react-prop-0.1.2.tgz#b22fbcf6190e91e81939132a110bb94642b56903"
 
@@ -91,11 +91,11 @@ loose-envify@^1.0.0:
   dependencies:
     js-tokens "^3.0.0"
 
-styled-jss@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/styled-jss/-/styled-jss-0.6.0.tgz#693aba98c66855f4b58fd0cb2ef5b5b87bbf0d2c"
+styled-jss@0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/styled-jss/-/styled-jss-0.6.3.tgz#c31dc46a57832501b111ee91b99a3a198766fcab"
   dependencies:
-    is-react-prop "^0.1.1"
+    is-react-prop "^0.1.2"
     jss "^7.1.1"
     jss-preset-default "^2.0.0"
 
