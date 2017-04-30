@@ -9,8 +9,8 @@
   "license": "MIT",
   "dependencies": {
     "big-table-utils": "1.0.0",
-    "fela": "^4.3.3",
-    "react-fela": "^4.3.3"
+    "fela": "4.3.3",
+    "react-fela": "4.3.3"
   },
   "devDependencies": {
     "dev-tasks": "1.0.0"
