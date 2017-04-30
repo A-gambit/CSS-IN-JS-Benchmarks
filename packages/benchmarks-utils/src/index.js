@@ -1,4 +1,8 @@
 import React from 'react';
+import asap from 'asap';
+
+const getRandom = (min, max) =>
+  Math.floor(Math.random() * (max - min + 1) + min);
 
 function getTable(max = 30) {
   let table = [];
@@ -44,16 +48,40 @@ async function runTestRerender() {
   }
 }
 
-function willMount() {
-  if (document.location.search.includes('test=true')) {
-    performance.mark('startMount');
-  }
+function willMount(table) {
+  if (!document.location.search.includes('test=true')) return;
+
+  const cellsTotal = table.length * table[0].length - 1;
+
+  const check = () => {
+    const cells = document.querySelectorAll('.table > div > div > div');
+
+    const isMounted = [
+      cells[0],
+      cells[getRandom(0, cellsTotal - 1)],
+      cells[cellsTotal],
+    ].every(cell => {
+      if (!cell) return false;
+      const styles = window.getComputedStyle(cell);
+
+      return (
+        styles.backgroundColor !== 'rgba(0, 0, 0, 0)' ||
+        styles.padding === '10px'
+      );
+    });
+
+    if (!isMounted) {
+      return asap(check);
+    }
+
+    didMount();
+  };
+
+  performance.mark('startMount');
+  asap(check);
 }
 
 function didMount() {
-  if (!document.location.search.includes('test=true')) {
-    return;
-  }
   performance.mark('endMount');
   performance.measure('measureMount', 'startMount', 'endMount');
 
@@ -79,11 +107,7 @@ export default class App extends React.Component {
   }
 
   componentWillMount() {
-    willMount();
-  }
-
-  componentDidMount() {
-    didMount();
+    willMount(this.state.table);
   }
 
   handleClick = () => {
@@ -99,7 +123,9 @@ export default class App extends React.Component {
           {' '}
           <span>{getUniqueSize(this.state.table)} unique cells</span>
         </div>
-        <Table table={this.state.table} toPercent={toPercent} />
+        <div className="table">
+          <Table table={this.state.table} toPercent={toPercent} />
+        </div>
       </div>
     );
   }

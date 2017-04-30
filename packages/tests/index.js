@@ -23,6 +23,7 @@ run();
 function launchChromeAndRunLighthouse(url, flags, config) {
   const launcher = new ChromeLauncher({
     port: 9222,
+    startingUrl: '',
     autoSelectChrome: true,
   });
   return launcher
@@ -33,6 +34,7 @@ function launchChromeAndRunLighthouse(url, flags, config) {
       }
       return launcher.run();
     })
+    .then(() => new Promise(resolve => setTimeout(resolve, 500)))
     .then(() => Lighthouse(url, flags, config))
     .then(results => launcher.kill().then(() => results))
     .catch(err => {
