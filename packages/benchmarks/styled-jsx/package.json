@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "big-table-utils": "1.0.0",
+    "benchmarks-utils": "1.0.0",
     "rockey-react": "0.0.11",
     "styled-jsx": "0.5.7"
   },

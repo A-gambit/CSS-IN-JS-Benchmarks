@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "styled-components": "1.4.4",
-    "big-table-utils": "1.0.0"
+    "benchmarks-utils": "1.0.0"
   },
   "benchmarks": {
     "name": "styled-components-v1-decouple-cell",

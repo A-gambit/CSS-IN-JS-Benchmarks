@@ -1,8 +1,7 @@
 {
-  "name": "big-table-test",
+  "name": "tests",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "A-gambit",
   "dependencies": {
     "connect": "3.6.1",
     "lighthouse": "1.6.5",

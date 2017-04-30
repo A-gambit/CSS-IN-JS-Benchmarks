@@ -14,18 +14,14 @@ before_install:
   - docker ps -a
   - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
   - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
-  - git config --list
 
 install:
-  - npm install lerna
-  - lerna bootstrap
-  - npm install
+  - yarn add lerna
+  - lerna bootstrap --npm-client=yarn
+  - yarn
 
 cache:
   yarn: true
-
-env:
-  - NODE_ENV: production
 
 script:
   - npm run benchmark

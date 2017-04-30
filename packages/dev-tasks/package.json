@@ -1,10 +1,6 @@
 {
   "name": "dev-tasks",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "bin": {
     "devBuild": "./src/build.js",
     "devServer": "./src/devServer.js"

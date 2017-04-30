@@ -46,7 +46,7 @@ function getPackageList() {
   const lernaConfig = require('../../lerna.json');
 
   return lernaConfig.packages
-    .filter(pckg => pckg.indexOf('packages/benchmarks') === 0)
+    .filter(pckg => pckg.indexOf('packages/benchmarks/') === 0)
     .map(pckg => {
       // NOTE: use NODE_PATH env variable to prevent .. .. ..
       const { benchmarks } = require(path.join(
@@ -90,7 +90,8 @@ async function runTestCase(url) {
         config
       );
       const values = currentRes.audits['user-timings'].extendedInfo.value;
-      mountDuration.push(values[2].duration);
+      const mountTime = values[2].duration;
+      mountTime && mountDuration.push(mountTime);
       let curRerenderDuration = [];
       for (let i = 3; i < values.length; i++) {
         if (!values[i].duration) {
@@ -146,11 +147,6 @@ function arrayToTable(array, cols) {
   });
 
   return table;
-}
-
-function getPackageInfo(path) {
-  const json = JSON.parse(fs.readFileSync(path + '/' + packageJson));
-  return json.benchmarks;
 }
 
 function writeResults(res) {

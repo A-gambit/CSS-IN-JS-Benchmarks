@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "big-table-utils": "1.0.0",
+    "benchmarks-utils": "1.0.0",
     "react-jss": "5.4.1"
   },
   "devDependencies": {
@@ -19,7 +19,7 @@
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-jss": "5.4.1",
-    "big-table-utils": "1.0.0"
+    "benchmarks-utils": "1.0.0"
   },
   "benchmarks": {
     "name": "react-jss",
