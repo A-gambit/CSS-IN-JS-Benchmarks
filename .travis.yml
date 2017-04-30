@@ -9,20 +9,14 @@ services:
 before_install:
   - docker pull justinribeiro/chrome-headless
   - docker run -d --net host justinribeiro/chrome-headless
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=$HOME/.yarn/bin:$PATH
   - docker ps -a
   - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
   - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
-  - git config --list
 
 install:
   - npm install lerna
   - lerna bootstrap
   - npm install
-
-cache:
-  yarn: true
 
 env:
   - NODE_ENV: production

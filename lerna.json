@@ -1,8 +1,8 @@
 {
-  "lerna": "2.0.0-rc.3",
+  "lerna": "2.0.0-rc.4",
   "packages": [
-    "packages/big-table-test",
-    "packages/big-table-utils",
+    "packages/tests",
+    "packages/benchmarks-utils",
     "packages/dev-tasks",
     "packages/benchmarks/fela",
     "packages/benchmarks/rockey/rockey",
@@ -27,7 +27,6 @@
     "packages/benchmarks/react",
     "packages/benchmarks/react-css",
     "packages/benchmarks/react-jss",
-    "packages/benchmarks/styld",
     "packages/benchmarks/styled-jsx",
     "packages/benchmarks/styletron"
   ],

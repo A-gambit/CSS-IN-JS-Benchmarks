@@ -46,7 +46,7 @@ function getPackageList() {
   const lernaConfig = require('../../lerna.json');
 
   return lernaConfig.packages
-    .filter(pckg => pckg.indexOf('packages/benchmarks') === 0)
+    .filter(pckg => pckg.indexOf('packages/benchmarks/') === 0)
     .map(pckg => {
       // NOTE: use NODE_PATH env variable to prevent .. .. ..
       const { benchmarks } = require(path.join(
