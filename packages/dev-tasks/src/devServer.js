@@ -3,7 +3,6 @@ const webpackDevServer = require('webpack-dev-server');
 const webpack = require('webpack');
 const { argv } = require('yargs');
 
-process.NODE_ENV = 'production';
 const packageName = argv.package;
 
 const webpackConfig = require('./webpack.config.js');

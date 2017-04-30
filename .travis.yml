@@ -28,7 +28,7 @@ env:
   - NODE_ENV: production
 
 script:
-  - NODE_ENV=production && npm run benchmark
+  - npm run benchmark
 
 after_success:
   - git config user.name "A-gambit"
