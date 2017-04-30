@@ -22,9 +22,6 @@ install:
 cache:
   yarn: true
 
-env:
-  - NODE_ENV: production
-
 script:
   - npm run benchmark
 
