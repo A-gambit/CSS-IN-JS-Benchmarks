@@ -32,8 +32,6 @@
     "yargs": "6.6.0"
   },
   "scripts": {
-    "preinstall": "npm i lerna && lerna bootstrap --npm-client=yarn",
-    "prepare": "lerna run build",
     "benchmark": "node ./packages/tests/",
     "format": "find . -name '*.js' | grep -v node_modules | xargs prettier --trailing-comma es5 --single-quote --write",
     "precommit": "lint-staged"

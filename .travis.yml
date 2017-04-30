@@ -16,7 +16,9 @@ before_install:
   - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
 
 install:
-  - npm i
+  - yarn add lerna
+  - lerna bootstrap --npm-client=yarn
+  - yarn
 
 cache:
   yarn: true
