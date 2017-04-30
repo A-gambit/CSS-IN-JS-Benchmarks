@@ -8,12 +8,15 @@ Big Table examples, use:
 - react + css
 - aphrodite
 - glamorous
+- glam
+- fela
 - react-jss
 - radium
-- styld (jss)
+- rockey
 - styled-components
 - styled-jsx
 - styletron
+- etc
 
 Average results are [here](https://github.com/A-gambit/CSS-IN-JS-Benchmarks/blob/master/RESULT.md).
 
