@@ -9,6 +9,7 @@
     "packages/benchmarks/rockey/rockey-speedy",
     "packages/benchmarks/rockey/rockey-inline",
     "packages/benchmarks/styled-jss",
+    "packages/benchmarks/styld",
     "packages/benchmarks/styled-components/v1/decouple-cell",
     "packages/benchmarks/styled-components/v1/inline-style",
     "packages/benchmarks/styled-components/v1/simple",
