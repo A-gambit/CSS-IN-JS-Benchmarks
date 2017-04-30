@@ -24,7 +24,7 @@ New demos and benchmarks will be soon :)
 Here is a little contributing guild:
 
 - `npm i`
-- `lerna bootstrap` or `npm bootstrap --npm-client=yarn`
+- `lerna bootstrap` or `lerna bootstrap --npm-client=yarn`
 - `npm run prepare` - make builds for all packages
 
 1. Create an appropriate folder for your CSS in JS new implementation. Use [react](https://github.com/A-gambit/CSS-IN-JS-Benchmarks/tree/master/packages/big-table/react) as example of boilerplate.
