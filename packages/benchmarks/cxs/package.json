@@ -1,0 +1,23 @@
+{
+  "name": "table-cxs-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package cxs",
+    "build": "devBuild --package cxs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "cxs": "^3.0.4"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "cxs",
+    "useInlineStyles": true,
+    "useCSS": true,
+    "link": "https://github.com/jxnblk/cxs"
+  }
+}
