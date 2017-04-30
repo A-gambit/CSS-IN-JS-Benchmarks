@@ -9,7 +9,7 @@ const styled = Styled();
 
 const Table = styled('div', {
   display: 'table',
-  marginTop: 10,
+  marginTop: '10px',
 });
 
 const Row = styled('div', {
@@ -18,7 +18,7 @@ const Row = styled('div', {
 
 const Cell = styled('div', {
   display: 'table-cell',
-  padding: 10,
+  padding: '10px',
   background: props => `rgba(74, 174, 53, ${props.value})`,
 });
 
