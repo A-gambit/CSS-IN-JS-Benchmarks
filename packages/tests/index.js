@@ -128,7 +128,7 @@ function arrayToTable(array, cols) {
   const nextLine = '\r\n';
   const nextCol = ' | ';
 
-  let table = `## Results:${nextLine}*(sorted by rerender time)*${nextLine}${nextLine}`;
+  let table = `## Results:${nextLine}*sorted by rerender time*${nextLine}${nextLine}`;
 
   table += cols.join(nextCol);
   table += nextLine;
@@ -156,16 +156,16 @@ function writeResults(res) {
     'Solution',
     'Use CSS',
     'Use Inline-Styles',
-    'Mount Time',
-    'Rerender time',
+    'Mount Time (ms)',
+    'Rerender time (ms)',
   ]);
 
   if (!filterPackages) {
     sortRes.map(res => {
       console.log('');
       console.log(`${chalk.green(res.name)}`);
-      console.log(`  - Mount time: ${chalk.cyan(res.mountDuration)}`);
-      console.log(`  - Renderer time: ${chalk.cyan(res.rerenderDuration)}`);
+      console.log(`  - Mount time: ${chalk.cyan(res.mountDuration)} ms`);
+      console.log(`  - Renderer time: ${chalk.cyan(res.rerenderDuration)} ms`);
       console.log('');
     });
 
@@ -240,8 +240,8 @@ async function run() {
 
     console.log('');
     console.log(`  ${chalk.green(packageInfo.name)}:`);
-    console.log(`    - Rerender Duration: ${packageRes.rerenderDuration}`);
-    console.log(`    - Mount Duration: ${packageRes.mountDuration}`);
+    console.log(`    - Rerender Duration: ${packageRes.rerenderDuration} ms`);
+    console.log(`    - Mount Duration: ${packageRes.mountDuration} ms`);
 
     res.push({
       name: packageInfo.name,
