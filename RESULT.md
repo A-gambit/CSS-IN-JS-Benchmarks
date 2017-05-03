@@ -1,32 +1,32 @@
 ## Results:
-*(sorted by rerender time)*
+*sorted by rerender time*
 
-Solution | Use CSS | Use Inline-Styles | Mount Time | Rerender time
+Solution | Use CSS | Use Inline-Styles | Mount Time (ms) | Rerender time (ms)
 :--- | :--- | :--- | :--- | :---
-[react (without styles)](https://github.com/facebook/react) | - | - | 47.62 | 40.28
-[cxs](https://github.com/jxnblk/cxs) | + | + | 69.88 | 56.74
-[react-css](https://github.com/facebook/react) | + | + | 74.55 | 56.86
-[styled-jsx](https://github.com/zeit/styled-jsx) | + | + | 99.06 | 57.94
-[aphrodite](https://github.com/Khan/aphrodite) | + | + | 86.02 | 59.67
-[glam-inline-style](https://github.com/threepointone/glam) | + | + | 78.01 | 59.96
-[glam-simple](https://github.com/threepointone/glam) | + | - | 79.17 | 78.78
-[fela](https://github.com/rofrischmann/fela/) | + | - | 120.28 | 85.29
-[styled-jss-w-o-plugins](https://github.com/cssinjs/styled-jss) | + | - | 181.97 | 88.79
-[rockey-inline](https://github.com/tuchk4/rockey) | + | + | 170.63 | 99.96
-[styletron](https://github.com/rtsao/styletron) | + | - | 155.47 | 103.4
-[styled-components-v1-inline-styles](https://github.com/styled-components/styled-components) | + | + | 180.5 | 104.3
-[styled-jss](https://github.com/cssinjs/styled-jss) | + | - | 242.86 | 108.61
-[styled-components-v2-inline-styles](https://github.com/styled-components/styled-components/tree/v2) | + | + | 183.65 | 110.35
-[styled-components-v2-plugin-inline-styles](https://github.com/styled-components/styled-components/tree/v2) | + | + | 193.62 | 112.24
-[radium](https://github.com/FormidableLabs/radium) | - | + | 170.23 | 117.62
-[react-jss](https://github.com/cssinjs/react-jss) | + | - | 291.78 | 207.02
-[glamorous](https://github.com/paypal/glamorous) | + | - | 333.56 | 312.28
-[rockey-speedy](https://github.com/tuchk4/rockey) | + | - | 443.02 | 420.74
-[rockey](https://github.com/tuchk4/rockey) | + | - | 503.77 | 456.38
-[glamorous-glamour-css](https://github.com/paypal/glamorous) | + | - | 432.78 | 491.9
-[styled-components-v2-plugin-decouple-cell](https://github.com/styled-components/styled-components/tree/v2) | + | - | 1,325.51 | 2,477.48
-[styled-components-v2-decouple-cell](https://github.com/styled-components/styled-components/tree/v2) | + | - | 1,328.96 | 2,484
-[styled-components-v2](https://github.com/styled-components/styled-components/tree/v2) | + | - | 1,689.66 | 3,606.45
-[styled-components-v2-plugin](https://github.com/styled-components/styled-components/tree/v2) | + | - | 1,697.77 | 3,668.17
-[styled-components-v1](https://github.com/styled-components/styled-components) | + | - | 1,914.88 | 3,928.56
-[styled-components-v1-decouple-cell](https://github.com/styled-components/styled-components) | + | - | 1,889.4 | 3,936.62
+[react (without styles)](https://github.com/facebook/react) | - | - | 29.56 | 32.83
+[styled-jsx](https://github.com/zeit/styled-jsx) | + | + | 53.79 | 50.18
+[aphrodite](https://github.com/Khan/aphrodite) | + | + | 56.3 | 52.27
+[glam-inline-style](https://github.com/threepointone/glam) | + | + | 50.95 | 54.86
+[react-css](https://github.com/facebook/react) | + | + | 52.87 | 55.74
+[cxs](https://github.com/jxnblk/cxs) | + | + | 52.63 | 60.98
+[styled-jss-w-o-plugins](https://github.com/cssinjs/styled-jss) | + | - | 138.08 | 65.95
+[glam-simple](https://github.com/threepointone/glam) | + | - | 51.19 | 67.55
+[rockey-inline](https://github.com/tuchk4/rockey) | + | + | 108.78 | 77.41
+[fela](https://github.com/rofrischmann/fela/) | + | - | 78.39 | 80.21
+[styletron](https://github.com/rtsao/styletron) | + | - | 86.83 | 82.85
+[styled-components-v1-inline-styles](https://github.com/styled-components/styled-components) | + | + | 120.83 | 83.48
+[styled-jss](https://github.com/cssinjs/styled-jss) | + | - | 194.41 | 84.78
+[styled-components-v2-inline-styles](https://github.com/styled-components/styled-components/tree/v2) | + | + | 127.38 | 89.6
+[radium](https://github.com/FormidableLabs/radium) | - | + | 104.17 | 94.81
+[styled-components-v2-plugin-inline-styles](https://github.com/styled-components/styled-components/tree/v2) | + | + | 116.57 | 95.84
+[glamorous](https://github.com/paypal/glamorous) | + | - | 226.31 | 283.21
+[react-jss](https://github.com/cssinjs/react-jss) | + | - | 212.42 | 287.11
+[glamorous-glamour-css](https://github.com/paypal/glamorous) | + | - | 382.52 | 412.54
+[rockey-speedy](https://github.com/tuchk4/rockey) | + | - | 504.22 | 567.17
+[rockey](https://github.com/tuchk4/rockey) | + | - | 583.24 | 764.9
+[styled-components-v2-plugin-decouple-cell](https://github.com/styled-components/styled-components/tree/v2) | + | - | 1,073.33 | 2,713.9
+[styled-components-v2-decouple-cell](https://github.com/styled-components/styled-components/tree/v2) | + | - | 1,230.03 | 2,738.3
+[styled-components-v1](https://github.com/styled-components/styled-components) | + | - | 1,637.57 | 4,064.74
+[styled-components-v2](https://github.com/styled-components/styled-components/tree/v2) | + | - | 1,606.75 | 4,105.83
+[styled-components-v2-plugin](https://github.com/styled-components/styled-components/tree/v2) | + | - | 1,644.76 | 4,221.96
+[styled-components-v1-decouple-cell](https://github.com/styled-components/styled-components) | + | - | 1,937.78 | 5,110.73
