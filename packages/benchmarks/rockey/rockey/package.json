@@ -9,7 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "benchmarks-utils": "1.0.0",
-    "rockey-react": "0.0.12-alpha.f87220ea"
+    "rockey-react": "0.0.12-alpha.c810ddcf"
   },
   "devDependencies": {
     "dev-tasks": "1.0.0"
