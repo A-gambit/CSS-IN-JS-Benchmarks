@@ -24,16 +24,16 @@ raf@^3.3.0:
   dependencies:
     performance-now "~0.2.0"
 
-rockey-react@0.0.12-alpha.f87220ea:
-  version "0.0.12-alpha.f87220ea"
-  resolved "https://registry.yarnpkg.com/rockey-react/-/rockey-react-0.0.12-alpha.f87220ea.tgz#f2721c19605330b21dc470b369e7f314be3af036"
+rockey-react@0.0.12-alpha.a05d744a:
+  version "0.0.12-alpha.a05d744a"
+  resolved "https://registry.yarnpkg.com/rockey-react/-/rockey-react-0.0.12-alpha.a05d744a.tgz#1afd32e5942edfecfc102c017b9898b3babc0373"
   dependencies:
     classnames "^2.2.5"
     is-react-prop "^0.1.2"
     lodash "^4.17.4"
-    rockey "^0.0.8-alpha.f87220ea"
+    rockey "^0.0.8-alpha.a05d744a"
 
-rockey@^0.0.8-alpha.f87220ea:
+rockey@^0.0.8-alpha.a05d744a:
   version "0.0.8-alpha.f87220ea"
   resolved "https://registry.yarnpkg.com/rockey/-/rockey-0.0.8-alpha.f87220ea.tgz#6f69cde3339a849b55b6f98154515df276aaebae"
   dependencies:

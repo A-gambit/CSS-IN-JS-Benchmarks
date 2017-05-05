@@ -6,7 +6,6 @@
     "packages/dev-tasks",
     "packages/benchmarks/fela",
     "packages/benchmarks/rockey/rockey",
-    "packages/benchmarks/rockey/rockey-speedy",
     "packages/benchmarks/rockey/rockey-inline",
     "packages/benchmarks/styled-jss/styled-jss",
     "packages/benchmarks/styled-jss/w-o-plugins",
