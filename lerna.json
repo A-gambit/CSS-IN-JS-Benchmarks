@@ -7,6 +7,7 @@
     "packages/benchmarks/fela",
     "packages/benchmarks/rockey/rockey",
     "packages/benchmarks/rockey/rockey-inline",
+    "packages/benchmarks/rockey/rockey-speedy",
     "packages/benchmarks/styled-jss/styled-jss",
     "packages/benchmarks/styled-jss/w-o-plugins",
     "packages/benchmarks/styled-components/v1/decouple-cell",

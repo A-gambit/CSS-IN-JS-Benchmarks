@@ -1,5 +1,4 @@
 import React from 'react';
-import 'rockey-react/speedy';
 import rockey from 'rockey-react';
 
 const Table = rockey.div`
