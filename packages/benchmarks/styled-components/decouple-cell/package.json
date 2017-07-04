@@ -1,0 +1,23 @@
+{
+  "name": "table-styled-components-big-table-v2-plugin-decouple-cell",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package styled-components/v2-plugin/decouple-cell",
+    "build": "devBuild --package styled-components/v2-plugin/decouple-cell"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "dev-tasks": "1.0.0",
+    "babel-plugin-styled-components": "1.1.4"
+  },
+  "dependencies": {
+    "styled-components": "2.1.0",
+    "benchmarks-utils": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "styled-components-v2-plugin-decouple-cell",
+    "link": "https://github.com/styled-components/styled-components/tree/v2",
+    "useCSS": true
+  }
+}
