@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "devServer --package styled-components/v2-plugin/decouple-cell",
-    "build": "devBuild --package styled-components/v2-plugin/decouple-cell"
+    "start": "devServer --package styled-components/decouple-cell",
+    "build": "devBuild --package styled-components/decouple-cell"
   },
   "license": "MIT",
   "devDependencies": {

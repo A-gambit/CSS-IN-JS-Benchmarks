@@ -185,8 +185,6 @@ async function run() {
 
   shell.config.verbose = true;
 
-  console.log(packages);
-
   if (!packages.length) {
     console.log('There are no packages');
     return;
