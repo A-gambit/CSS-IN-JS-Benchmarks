@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "devServer --package styled-components/v2-plugin/inline-style",
-    "build": "devBuild --package styled-components/v2-plugin/inline-style"
+    "start": "devServer --package styled-components/inline-style",
+    "build": "devBuild --package styled-components/inline-style"
   },
   "license": "MIT",
   "devDependencies": {
     "dev-tasks": "1.0.0",
-    "babel-plugin-styled-components": "1.1.4"
+    "babel-plugin-styled-components": "1.1.7"
   },
   "dependencies": {
-    "styled-components": "2.0.0-15",
+    "styled-components": "2.1.2",
     "benchmarks-utils": "1.0.0"
   },
   "benchmarks": {
