@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "devServer --package styled-components/v2-plugin/inline-style",
-    "build": "devBuild --package styled-components/v2-plugin/inline-style"
+    "start": "devServer --package styled-components/inline-style",
+    "build": "devBuild --package styled-components/inline-style"
   },
   "license": "MIT",
   "devDependencies": {
