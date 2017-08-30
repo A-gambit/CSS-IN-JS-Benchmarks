@@ -1,0 +1,16 @@
+.styled-Table-1wvwg7w {
+    display: table;
+    margin-top: 10px
+}
+.styled-Row-13immaf {
+    display: table-row
+}
+.styled-CellDefault-th8btg {
+    display: table-cell;
+    padding: 10px
+}
+.styled-Cell-1gcqnpp {
+    display: table-cell;
+    padding: 10px;
+    background: rgba(74, 174, 53, var(--x))
+}

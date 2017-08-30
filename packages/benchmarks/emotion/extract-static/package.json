@@ -1,0 +1,26 @@
+{
+  "name": "table-emotion-extract-static-mode-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package emotion/extract-static",
+    "build": "devBuild --package emotion/extract-static"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@arr/foreach": "^0.1.0",
+    "@arr/map": "^0.1.0",
+    "benchmarks-utils": "1.0.0",
+    "emotion": "^7",
+    "theming": "^1.0.1"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "emotion-extract-static",
+    "useInlineStyles": true,
+    "useCSS": true,
+    "link": "https://github.com/tkh44/emotion"
+  }
+}
