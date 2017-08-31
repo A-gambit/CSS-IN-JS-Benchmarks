@@ -1,0 +1,22 @@
+{
+  "name": "table-emotion-simple-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package emotion/simple",
+    "build": "devBuild --package emotion/simple"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "emotion": "^7"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "emotion-simple",
+    "useCSS": true,
+    "link": "https://github.com/threepointone/emotion"
+  }
+}
