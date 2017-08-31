@@ -18,16 +18,16 @@ const CellDefault = styled.div`
 const Cell = styled('div')`
   display: table-cell;
   padding: 10px;
-  background: rgba(74, 174, 53, var(--x))
+  background: rgba(74, 174, 53, var(--alpha))
 `;
 
 export default ({ table, toPercent }) => (
   <Table>
     {table.map((row, i) => (
       <Row key={i}>
-        {row.map((x, j) => (
-          <Cell key={`${i}${j}`} style={{ '--x': x }}>
-            {toPercent(x)}
+        {row.map((alpha, j) => (
+          <Cell key={`${i}${j}`} style={{ '--alpha': alpha }}>
+            {toPercent(alpha)}
           </Cell>
         ))}
       </Row>

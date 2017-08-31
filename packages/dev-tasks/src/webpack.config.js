@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const chalk = require('chalk');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const { argv } = require('yargs');
 const packageName = argv.package;
@@ -45,6 +46,7 @@ if (isProd) {
       minimize: true,
       debug: false,
     }),
+    new ExtractTextPlugin('styles.css'),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false,
@@ -99,7 +101,18 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        use: ['style-loader', 'css-loader'],
+        use: isProd
+          ? ExtractTextPlugin.extract({
+              fallback: 'style-loader',
+              use: { loader: 'css-loader', options: { sourceMap: true } },
+            })
+          : [
+              'style-loader',
+              {
+                loader: 'css-loader',
+                options: { sourceMap: true },
+              },
+            ],
       },
     ],
   },
