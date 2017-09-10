@@ -24,6 +24,7 @@
     "packages/benchmarks/glamorous/glamor-css",
     "packages/benchmarks/radium",
     "packages/benchmarks/react",
+    "packages/benchmarks/react-styles",
     "packages/benchmarks/react-css",
     "packages/benchmarks/react-jss",
     "packages/benchmarks/styled-jsx",
