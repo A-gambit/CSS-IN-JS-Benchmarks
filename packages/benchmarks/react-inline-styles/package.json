@@ -1,5 +1,5 @@
 {
-  "name": "table-react-styles-big-table",
+  "name": "table-react-inline-styles-big-table",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -14,7 +14,8 @@
     "dev-tasks": "1.0.0"
   },
   "benchmarks": {
-    "name": "react (with styles)",
-    "link": "https://github.com/facebook/react"
+    "name": "react (with inline-styles)",
+    "link": "https://github.com/facebook/react",
+    "useInlineStyles": true
   }
 }
