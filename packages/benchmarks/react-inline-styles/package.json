@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "devServer --package react-styles",
-    "build": "devBuild --package react-styles"
+    "start": "devServer --package react-inline-styles",
+    "build": "devBuild --package react-inline-styles"
   },
   "license": "MIT",
   "dependencies": {
