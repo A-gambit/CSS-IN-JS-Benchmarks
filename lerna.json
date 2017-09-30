@@ -26,7 +26,8 @@
     "packages/benchmarks/react",
     "packages/benchmarks/react-css",
     "packages/benchmarks/react-jss",
-    "packages/benchmarks/styled-jsx",
+    "packages/benchmarks/styled-jsx/static",
+    "packages/benchmarks/styled-jsx/dynamic",
     "packages/benchmarks/styletron"
   ],
   "version": "1.0.0"

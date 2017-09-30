@@ -1,22 +1,22 @@
 {
-  "name": "table-styled-jsx-big-table",
+  "name": "table-styled-jsx-dynamic-big-table",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "devServer --package styled-jsx",
-    "build": "devBuild --package styled-jsx"
+    "start": "devServer --package styled-jsx/dynamic",
+    "build": "devBuild --package styled-jsx/dynamic"
   },
   "license": "MIT",
   "dependencies": {
     "benchmarks-utils": "1.0.0",
     "rockey-react": "0.0.11",
-    "styled-jsx": "0.5.7"
+    "styled-jsx": "2.0.0-beta.1"
   },
   "devDependencies": {
     "dev-tasks": "1.0.0"
   },
   "benchmarks": {
-    "name": "styled-jsx",
+    "name": "styled-jsx-dynamic",
     "useInlineStyles": true,
     "useCSS": true,
     "link": "https://github.com/zeit/styled-jsx"
