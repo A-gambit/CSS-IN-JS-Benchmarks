@@ -1,0 +1,21 @@
+{
+  "name": "table-react-inline-styles-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package react-inline-styles",
+    "build": "devBuild --package react-inline-styles"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "react (with inline-styles)",
+    "link": "https://github.com/facebook/react",
+    "useInlineStyles": true
+  }
+}

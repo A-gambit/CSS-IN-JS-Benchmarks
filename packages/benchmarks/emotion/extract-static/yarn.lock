@@ -35,13 +35,13 @@ autoprefixer@^7.1.2:
     postcss "^6.0.6"
     postcss-value-parser "^3.2.3"
 
-babel-plugin-emotion@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-emotion/-/babel-plugin-emotion-7.1.0.tgz#a426861c50f2c42b9d15aef8796da143752a981b"
+babel-plugin-emotion@^7.2.2:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-emotion/-/babel-plugin-emotion-7.2.2.tgz#eae520ef15e4affd87aab761e1c8b48b3385af3e"
   dependencies:
     autoprefixer "^7.1.2"
     babel-plugin-syntax-jsx "^6.18.0"
-    emotion-utils "^7.1.0"
+    emotion-utils "^7.2.2"
     postcss "^6.0.9"
     postcss-js "^1.0.0"
     postcss-nested "^2.1.1"
@@ -112,27 +112,27 @@ electron-to-chromium@^1.3.15:
   version "1.3.16"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.16.tgz#d0e026735754770901ae301a21664cba45d92f7d"
 
-emotion-server@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/emotion-server/-/emotion-server-7.2.0.tgz#be7c8ffd4e7e2e56fcdf8e94b42b545ddecbd7f6"
+emotion-server@^7.2.2:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/emotion-server/-/emotion-server-7.2.2.tgz#d1073df1c71ef6fad4ee5e32319deced97b15c6b"
   dependencies:
-    emotion "^7.2.0"
-    emotion-utils "^7.1.0"
+    emotion "^7.2.2"
+    emotion-utils "^7.2.2"
 
-emotion-utils@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/emotion-utils/-/emotion-utils-7.1.0.tgz#e59fb81e1edf3a50c4ed79f48f03123a0e7dfcb1"
+emotion-utils@^7.2.2:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/emotion-utils/-/emotion-utils-7.2.2.tgz#0057927581bdd0877d6d8fb90a6162a15c75b805"
   dependencies:
     fbjs "^0.8.12"
 
-emotion@^7.0.3, emotion@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/emotion/-/emotion-7.2.0.tgz#52badb10c89c4d34a97820684dd04efd575b31a7"
+emotion@^7, emotion@^7.2.2:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/emotion/-/emotion-7.2.2.tgz#c89908662f4abb706d488a316ea8bdcad0b29727"
   dependencies:
-    babel-plugin-emotion "^7.1.0"
-    emotion-server "^7.2.0"
-    emotion-utils "^7.1.0"
-    react-emotion "^7.2.0"
+    babel-plugin-emotion "^7.2.2"
+    emotion-server "^7.2.2"
+    emotion-utils "^7.2.2"
+    react-emotion "^7.2.2"
 
 encoding@^0.1.11:
   version "0.1.12"
@@ -299,13 +299,13 @@ prop-types@^15.5.10, prop-types@^15.5.8:
     fbjs "^0.8.9"
     loose-envify "^1.3.1"
 
-react-emotion@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/react-emotion/-/react-emotion-7.2.0.tgz#e5331036aeb30e3fd374f4cf948fd8ddd980be74"
+react-emotion@^7.2.2:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/react-emotion/-/react-emotion-7.2.2.tgz#0401607a0ba011bc16600a2691f5f57cb38ce89d"
   dependencies:
-    babel-plugin-emotion "^7.1.0"
-    emotion "^7.2.0"
-    emotion-utils "^7.1.0"
+    babel-plugin-emotion "^7.2.2"
+    emotion "^7.2.2"
+    emotion-utils "^7.2.2"
 
 react@^15.5.4:
   version "15.6.1"
