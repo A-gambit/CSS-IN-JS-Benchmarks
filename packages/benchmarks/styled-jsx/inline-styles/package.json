@@ -1,0 +1,24 @@
+{
+  "name": "table-styled-jsx-inline-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package styled-jsx/inline-styles",
+    "build": "devBuild --package styled-jsx/inline-styles"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "rockey-react": "0.0.11",
+    "styled-jsx": "^2.0.2"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "styled-jsx-inline-styles",
+    "useInlineStyles": true,
+    "useCSS": true,
+    "link": "https://github.com/zeit/styled-jsx"
+  }
+}
