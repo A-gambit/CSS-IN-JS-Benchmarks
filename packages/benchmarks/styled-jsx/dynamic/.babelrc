@@ -1,7 +1,7 @@
 {
   "plugins": [
     "transform-class-properties",
-    "styled-jsx/babel"
+    ["styled-jsx/babel", { "optimizeForSpeed": true }]
   ],
   "presets": [
     ["es2015", { "modules": false }],
