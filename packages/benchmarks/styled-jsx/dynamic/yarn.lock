@@ -162,9 +162,9 @@ string-hash@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/string-hash/-/string-hash-1.1.1.tgz#8e85bed291e0763b8f6809d9c3368fea048db3dc"
 
-styled-jsx@2.0.0-beta.1:
-  version "2.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/styled-jsx/-/styled-jsx-2.0.0-beta.1.tgz#f0feb9586dee06bb01d3e127a03fe64325924572"
+styled-jsx@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/styled-jsx/-/styled-jsx-2.0.2.tgz#71acf7720efec3fb051a4cceaa29d19a1bee4f65"
   dependencies:
     babel-plugin-syntax-jsx "6.18.0"
     babel-types "6.23.0"
