@@ -1,10 +1,10 @@
 {
-  "name": "table-styled-jsx-dynamic-big-table",
+  "name": "table-styled-jsx-inline-big-table",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "devServer --package styled-jsx/dynamic",
-    "build": "devBuild --package styled-jsx/dynamic"
+    "start": "devServer --package styled-jsx/inline-styles",
+    "build": "devBuild --package styled-jsx/inline-styles"
   },
   "license": "MIT",
   "dependencies": {
@@ -16,8 +16,8 @@
     "dev-tasks": "1.0.0"
   },
   "benchmarks": {
-    "name": "styled-jsx-dynamic",
-    "useInlineStyles": false,
+    "name": "styled-jsx-inline-styles",
+    "useInlineStyles": true,
     "useCSS": true,
     "link": "https://github.com/zeit/styled-jsx"
   }

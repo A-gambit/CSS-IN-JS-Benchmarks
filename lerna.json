@@ -27,7 +27,7 @@
     "packages/benchmarks/react-inline-styles",
     "packages/benchmarks/react-css",
     "packages/benchmarks/react-jss",
-    "packages/benchmarks/styled-jsx/static",
+    "packages/benchmarks/styled-jsx/inline-styles",
     "packages/benchmarks/styled-jsx/dynamic",
     "packages/benchmarks/styletron"
   ],
