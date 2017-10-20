@@ -12,7 +12,7 @@
     "babel-plugin-styled-components": "1.1.7"
   },
   "dependencies": {
-    "styled-components": "2.1.2",
+    "styled-components": "^2.2.1",
     "benchmarks-utils": "1.0.0"
   },
   "benchmarks": {
