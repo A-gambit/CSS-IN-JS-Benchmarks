@@ -1,0 +1,23 @@
+{
+  "name": "table-styled-jss-wo-plugins-v2-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package styled-jss/w-o-plugins-v2",
+    "build": "devBuild --package styled-jss/w-o-plugins-v2"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "styled-jss": "2.1.1",
+    "jss": "9.1.0"
+  },
+  "benchmarks": {
+    "name": "styled-jss-w-o-plugins-v2",
+    "useCSS": true,
+    "link": "https://github.com/cssinjs/styled-jss"
+  }
+}
