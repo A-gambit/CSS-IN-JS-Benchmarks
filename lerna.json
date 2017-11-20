@@ -5,6 +5,7 @@
     "packages/benchmarks-utils",
     "packages/dev-tasks",
     "packages/benchmarks/fela",
+    "packages/benchmarks/react-native-web",
     "packages/benchmarks/rockey/rockey",
     "packages/benchmarks/rockey/rockey-inline",
     "packages/benchmarks/rockey/rockey-speedy",

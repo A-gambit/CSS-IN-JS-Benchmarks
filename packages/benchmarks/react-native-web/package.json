@@ -1,0 +1,25 @@
+{
+  "name": "table-react-native-web-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package c",
+    "build": "devBuild --package react-native-web"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "react-native-web": "0.1.14",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "react-native-web",
+    "useInlineStyles": true,
+    "useCSS": true,
+    "link": "https://github.com/necolas/react-native-web"
+  }
+}
