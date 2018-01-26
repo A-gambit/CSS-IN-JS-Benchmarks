@@ -73,10 +73,6 @@ ieee754@^1.1.4:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
 
-is-function@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/is-function/-/is-function-1.0.1.tgz#12cfb98b65b57dd3d193a3121f5f6e2f437602b5"
-
 is-plain-object@^2.0.1:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/is-plain-object/-/is-plain-object-2.0.4.tgz#2c163b3fafb1b606d9d17928f05c2a1c38e07677"
@@ -140,23 +136,31 @@ setimmediate@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
 
-styled-components@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.2.1.tgz#f4835f1001c37bcc301ac3865b5d93466de4dd5b"
+styled-components@2.4.0-0:
+  version "2.4.0-0"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.4.0-0.tgz#d3c6f879c0b8a6d10ed184ad12da4c6625e0c12b"
   dependencies:
     buffer "^5.0.3"
     css-to-react-native "^2.0.3"
     fbjs "^0.8.9"
     hoist-non-react-statics "^1.2.0"
-    is-function "^1.0.1"
     is-plain-object "^2.0.1"
     prop-types "^15.5.4"
-    stylis "^3.2.1"
+    stylis "^3.4.0"
+    stylis-rule-sheet "^0.0.6"
     supports-color "^3.2.3"
+
+stylis-rule-sheet@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/stylis-rule-sheet/-/stylis-rule-sheet-0.0.6.tgz#059f89125a8e8db546e8adb0e07c4b4bcb81911b"
 
 stylis@^3.2.1:
   version "3.2.8"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.2.8.tgz#9b23a3e06597f7944a3d9ae880d5796248b8784f"
+
+stylis@^3.4.0:
+  version "3.4.8"
+  resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.4.8.tgz#94380babbcd4c75726215794ca985b38ec96d1a3"
 
 supports-color@^3.2.3:
   version "3.2.3"
