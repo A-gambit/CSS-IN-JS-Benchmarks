@@ -15,14 +15,14 @@ Solution | Use CSS | Use Inline-Styles | Mount Time (ms) | Rerender time (ms)
 [rockey-inline](https://github.com/tuchk4/rockey) | + | + | 130.68 | 110.88
 [styled-jss-w-o-plugins](https://github.com/cssinjs/styled-jss) | + | - | 162.79 | 111.59
 [fela](https://github.com/rofrischmann/fela/) | + | - | 94.44 | 112.65
-[styled-components-v2-plugin-inline-styles](https://github.com/styled-components/styled-components/tree/v2) | + | + | 128.91 | 112.92
+[styled-components-inline-styles](https://github.com/styled-components/styled-components/tree/v2) | + | + | 128.91 | 112.92
 [glam-simple](https://github.com/threepointone/glam) | + | - | 71.64 | 113.2
 [radium](https://github.com/FormidableLabs/radium) | - | + | 131.37 | 123.05
 [styletron](https://github.com/rtsao/styletron) | + | - | 131.33 | 124.37
 [styled-jss](https://github.com/cssinjs/styled-jss) | + | - | 211.4 | 136.07
-[styled-components-v2-plugin](https://github.com/styled-components/styled-components/tree/v2) | + | - | 204.02 | 176.59
+[styled-components](https://github.com/styled-components/styled-components/tree/v2) | + | - | 204.02 | 176.59
 [emotion-simple](https://github.com/threepointone/emotion) | + | - | 187.04 | 180.24
-[styled-components-v2-plugin-decouple-cell](https://github.com/styled-components/styled-components/tree/v2) | + | - | 245.32 | 187.99
+[styled-components-decouple-cell](https://github.com/styled-components/styled-components/tree/v2) | + | - | 245.32 | 187.99
 [styled-jsx-dynamic](https://github.com/zeit/styled-jsx) | + | - | 210.05 | 193.04
 [rockey-speedy](https://github.com/tuchk4/rockey) | + | - | 147.13 | 223.22
 [glamorous](https://github.com/paypal/glamorous) | + | - | 242.63 | 316.77
