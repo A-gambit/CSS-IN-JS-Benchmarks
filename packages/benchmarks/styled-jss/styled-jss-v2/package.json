@@ -1,0 +1,22 @@
+{
+  "name": "table-styled-jss-v2-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package styled-jss/styled-jss-v2",
+    "build": "devBuild --package styled-jss/styled-jss-v2"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "styled-jss": "2.1.1"
+  },
+  "benchmarks": {
+    "name": "styled-jss-v2",
+    "useCSS": true,
+    "link": "https://github.com/cssinjs/styled-jss"
+  }
+}

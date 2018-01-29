@@ -1,4 +1,4 @@
-# Styled-JSX Big Table
+# Styled-JSS Big Table
 
 ## Available Scripts
 
