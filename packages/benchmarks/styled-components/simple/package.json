@@ -16,7 +16,7 @@
     "styled-components": "^3.1.0-speedy6"
   },
   "benchmarks": {
-    "name": "styled-components-v2-plugin",
+    "name": "styled-components",
     "link": "https://github.com/styled-components/styled-components/tree/v2",
     "useCSS": true
   }
