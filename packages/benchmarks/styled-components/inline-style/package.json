@@ -16,7 +16,7 @@
     "styled-components": "^3.1.0-speedy6"
   },
   "benchmarks": {
-    "name": "styled-components-v2-plugin-inline-styles",
+    "name": "styled-components-inline-styles",
     "link": "https://github.com/styled-components/styled-components/tree/v2",
     "useInlineStyles": true,
     "useCSS": true

@@ -17,7 +17,7 @@
     "stylis-rule-sheet": "^0.0.6"
   },
   "benchmarks": {
-    "name": "styled-components-v2-plugin-decouple-cell",
+    "name": "styled-components-decouple-cell",
     "link": "https://github.com/styled-components/styled-components/tree/v2",
     "useCSS": true
   }
