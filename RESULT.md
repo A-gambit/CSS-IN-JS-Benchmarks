@@ -31,3 +31,4 @@ Solution | Use CSS | Use Inline-Styles | Mount Time (ms) | Rerender time (ms)
 [rockey](https://github.com/tuchk4/rockey) | + | - | 305.72 | 408.52
 [react-jss](https://github.com/cssinjs/react-jss) | + | - | 325.43 | 412.26
 [glamorous-glamour-css](https://github.com/paypal/glamorous) | + | - | 402.84 | 526.15
+
