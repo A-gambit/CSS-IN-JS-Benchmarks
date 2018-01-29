@@ -61,7 +61,12 @@ function getPackageList() {
       });
     })
     .filter(info => {
-      return !filterPackages || filterPackages.indexOf(info.name) !== -1;
+      return (
+        !filterPackages ||
+        filterPackages.some(
+          filterPackage => info.name.indexOf(filterPackage) > -1
+        )
+      );
     });
 }
 
