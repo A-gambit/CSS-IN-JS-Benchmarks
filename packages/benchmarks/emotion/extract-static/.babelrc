@@ -1,7 +1,7 @@
 {
   "plugins": [
     "transform-class-properties",
-    ["emotion/babel", { "extractStatic": true }]
+    ["emotion", { "extractStatic": true }]
   ],
   "presets": [
     ["es2015", { "modules": false }],

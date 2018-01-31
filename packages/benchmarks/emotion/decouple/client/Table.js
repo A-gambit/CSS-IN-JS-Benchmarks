@@ -10,9 +10,12 @@ const Row = styled('div')`
   display: table-row;
 `;
 
-const Cell = styled('div')`
+const CellDefault = styled('div')`
   display: table-cell;
   padding: 10px;
+`;
+
+const Cell = styled(CellDefault)`
   background: rgba(74, 174, 53, ${props => props.value});
 `;
 

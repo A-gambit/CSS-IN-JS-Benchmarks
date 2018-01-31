@@ -1,27 +1,23 @@
 {
-  "name": "table-emotion-extract-static-mode-big-table",
+  "name": "table-emotion-decouple-big-table",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "devServer --package emotion/extract-static",
-    "build": "devBuild --package emotion/extract-static"
+    "start": "devServer --package emotion/decouple",
+    "build": "devBuild --package emotion/decouple"
   },
   "license": "MIT",
   "dependencies": {
-    "@arr/foreach": "^0.1.0",
-    "@arr/map": "^0.1.0",
     "benchmarks-utils": "1.0.0",
     "emotion": "^8.0.12",
     "babel-plugin-emotion": "^8.0.12",
-    "react-emotion": "^8.0.12",
-    "theming": "^1.0.1"
+    "react-emotion": "^8.0.12"
   },
   "devDependencies": {
     "dev-tasks": "1.0.0"
   },
   "benchmarks": {
-    "name": "emotion-extract-static",
-    "useInlineStyles": true,
+    "name": "emotion-decouple",
     "useCSS": true,
     "link": "https://github.com/emotion-js/emotion"
   }

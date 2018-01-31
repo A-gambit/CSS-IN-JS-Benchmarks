@@ -1,7 +1,7 @@
 {
   "plugins": [
     "transform-class-properties",
-    ["emotion/babel"]
+    ["emotion"]
   ],
   "presets": [
     ["es2015", { "modules": false }],
