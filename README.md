@@ -26,7 +26,7 @@ New demos and benchmarks will be soon :)
 
 Here is a little contributing guild:
 
-- Use `node` version `7.9+`
+- Use `node` version `^7.9` (i.e. use `7.9` or newer, but not as new as `8`)
 - Install `lerna` and `yarn` (optional)
 - `lerna bootstrap` or `lerna bootstrap --npm-client=yarn` - install deps in packages
 - `npm i`
