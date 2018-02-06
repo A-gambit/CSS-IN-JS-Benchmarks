@@ -9,9 +9,11 @@
   "license": "MIT",
   "dependencies": {
     "benchmarks-utils": "1.0.0",
-    "emotion": "^7",
     "@arr/foreach": "^0.1.0",
-    "@arr/map": "^0.1.0"
+    "@arr/map": "^0.1.0",
+    "emotion": "^8.0.12",
+    "babel-plugin-emotion": "^8.0.12",
+    "react-emotion": "^8.0.12"
   },
   "devDependencies": {
     "dev-tasks": "1.0.0"
@@ -20,6 +22,6 @@
     "name": "emotion-css-mode",
     "useInlineStyles": true,
     "useCSS": true,
-    "link": "https://github.com/tkh44/emotion"
+    "link": "https://github.com/emotion-js/emotion"
   }
 }

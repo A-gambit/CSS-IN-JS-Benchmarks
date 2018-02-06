@@ -41,5 +41,8 @@
       "prettier --trailing-comma es5 --single-quote --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "babel-plugin-emotion": "^8.0.12"
   }
 }

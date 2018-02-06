@@ -1,24 +1,19 @@
 import React from 'react';
-import styled from 'emotion/react';
+import styled, { css } from 'react-emotion';
 
-const Table = styled.div`
+const Table = styled('div')`
   display: table;
   margin-top: 10px;
 `;
 
-const Row = styled.div`
+const Row = styled('div')`
   display: table-row;
-`;
-
-const CellDefault = styled.div`
-  display: table-cell;
-  padding: 10px;
 `;
 
 const Cell = styled('div')`
   display: table-cell;
   padding: 10px;
-  background: rgba(74, 174, 53, var(--alpha))
+  background: rgba(74, 174, 53, ${({ alpha }) => alpha})
 `;
 
 export default ({ table, toPercent }) => (
@@ -26,7 +21,7 @@ export default ({ table, toPercent }) => (
     {table.map((row, i) => (
       <Row key={i}>
         {row.map((alpha, j) => (
-          <Cell key={`${i}${j}`} style={{ '--alpha': alpha }}>
+          <Cell key={`${i}${j}`} alpha={alpha}>
             {toPercent(alpha)}
           </Cell>
         ))}

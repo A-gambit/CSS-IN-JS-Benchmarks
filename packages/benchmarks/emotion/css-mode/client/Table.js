@@ -1,5 +1,5 @@
 import React from 'react';
-import { css } from 'emotion';
+import styled, { css } from 'react-emotion';
 
 const tableClass = css`
   display: table;

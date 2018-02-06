@@ -9,7 +9,9 @@
   "license": "MIT",
   "dependencies": {
     "benchmarks-utils": "1.0.0",
-    "emotion": "^7"
+    "emotion": "^8.0.12",
+    "babel-plugin-emotion": "^8.0.12",
+    "react-emotion": "^8.0.12"
   },
   "devDependencies": {
     "dev-tasks": "1.0.0"
@@ -17,6 +19,6 @@
   "benchmarks": {
     "name": "emotion-simple",
     "useCSS": true,
-    "link": "https://github.com/threepointone/emotion"
+    "link": "https://github.com/emotion-js/emotion"
   }
 }
