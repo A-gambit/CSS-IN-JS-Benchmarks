@@ -1,0 +1,22 @@
+{
+  "name": "table-merge-styles-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package merge-styles",
+    "build": "devBuild --package merge-styles"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "@uifabric/merge-styles": "5.12.2"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "merge-styles",
+    "useCSS": true,
+    "link": "https://github.com/OfficeDev/office-ui-fabric-react/packages/merge-styles"
+  }
+}
