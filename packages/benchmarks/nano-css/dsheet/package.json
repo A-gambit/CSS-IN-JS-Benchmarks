@@ -1,0 +1,23 @@
+{
+  "name": "nano-css-dsheet-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package nano-css/dsheet",
+    "build": "devBuild --package nano-css/dsheet"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "nano-css": "1.13.0"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "nano-css (using dsheet() interface)",
+    "link": "https://github.com/streamich/nano-css/blob/master/docs/dsheet.md",
+    "useInlineStyles": true,
+    "useCSS": true
+  }
+}

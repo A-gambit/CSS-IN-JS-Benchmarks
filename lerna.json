@@ -9,6 +9,7 @@
     "packages/benchmarks/nano-css/rule",
     "packages/benchmarks/nano-css/drule",
     "packages/benchmarks/nano-css/sheet",
+    "packages/benchmarks/nano-css/dsheet",
     "packages/benchmarks/nano-css/jsx",
     "packages/benchmarks/nano-css/styled",
     "packages/benchmarks/nano-css/styled-css",
