@@ -9,6 +9,7 @@
     "packages/benchmarks/nano-css/rule",
     "packages/benchmarks/nano-css/sheet",
     "packages/benchmarks/nano-css/jsx",
+    "packages/benchmarks/nano-css/styled",
     "packages/benchmarks/react-native-web",
     "packages/benchmarks/rockey/rockey",
     "packages/benchmarks/rockey/rockey-inline",
