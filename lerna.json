@@ -42,7 +42,8 @@
     "packages/benchmarks/react-jss",
     "packages/benchmarks/styled-jsx/inline-styles",
     "packages/benchmarks/styled-jsx/dynamic",
-    "packages/benchmarks/styletron"
+    "packages/benchmarks/styletron",
+    "packages/benchmarks/tweet-css"
   ],
   "version": "1.0.0"
 }
