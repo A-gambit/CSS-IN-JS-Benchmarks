@@ -5,6 +5,8 @@
     "packages/benchmarks-utils",
     "packages/dev-tasks",
     "packages/benchmarks/fela",
+    "packages/benchmarks/nano-css/put",
+    "packages/benchmarks/nano-css/rule",
     "packages/benchmarks/react-native-web",
     "packages/benchmarks/rockey/rockey",
     "packages/benchmarks/rockey/rockey-inline",
