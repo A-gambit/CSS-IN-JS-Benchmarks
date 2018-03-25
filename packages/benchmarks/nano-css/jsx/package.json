@@ -1,0 +1,23 @@
+{
+  "name": "nano-css-jsx-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package nano-css/jsx",
+    "build": "devBuild --package nano-css/jsx"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "nano-css": "1.13.0"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "nano-css (using jsx() interface)",
+    "link": "https://github.com/streamich/nano-css/blob/master/docs/jsx.md",
+    "useInlineStyles": true,
+    "useCSS": true
+  }
+}

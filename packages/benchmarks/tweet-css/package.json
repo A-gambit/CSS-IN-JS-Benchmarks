@@ -1,0 +1,21 @@
+{
+  "name": "tweet-css-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package tweet-css",
+    "build": "devBuild --package tweet-css"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "tweet-css",
+    "link": "https://gist.github.com/streamich/09d99716d05304fe8c4ff9cf20d3c7d7",
+    "useInlineStyles": true
+  }
+}
