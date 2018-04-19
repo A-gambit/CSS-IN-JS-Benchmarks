@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    "transform-class-properties",
+    ["emotion"]
+  ],
+  "presets": [
+    ["es2015", { "modules": false }],
+    "react"
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        "react-hmre"
+      ]
+    }
+  }
+}
