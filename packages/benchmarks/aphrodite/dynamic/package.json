@@ -1,10 +1,10 @@
 {
-  "name": "table-aphrodite-big-table",
+  "name": "table-aphrodite-dynamic-big-table",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "devServer --package aphrodite",
-    "build": "devBuild --package aphrodite"
+    "start": "devServer --package aphrodite/dynamic",
+    "build": "devBuild --package aphrodite/dynamic"
   },
   "license": "MIT",
   "dependencies": {
@@ -15,8 +15,8 @@
     "dev-tasks": "1.0.0"
   },
   "benchmarks": {
-    "name": "aphrodite",
-    "useInlineStyles": true,
+    "name": "aphrodite-dynamic",
+    "useInlineStyles": false,
     "useCSS": true,
     "link": "https://github.com/Khan/aphrodite"
   }
