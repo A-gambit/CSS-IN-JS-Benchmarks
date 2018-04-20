@@ -1,0 +1,23 @@
+{
+  "name": "table-cxs-inline-styles-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package cxs/inline-styles",
+    "build": "devBuild --package cxs/inline-styles"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "cxs": "3.0.4"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "cxs-inline-styles",
+    "useInlineStyles": true,
+    "useCSS": true,
+    "link": "https://github.com/jxnblk/cxs"
+  }
+}

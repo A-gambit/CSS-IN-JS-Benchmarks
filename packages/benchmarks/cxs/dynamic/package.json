@@ -1,10 +1,10 @@
 {
-  "name": "table-cxs-big-table",
+  "name": "table-cxs-dynamic-big-table",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "devServer --package cxs",
-    "build": "devBuild --package cxs"
+    "start": "devServer --package cxs/dynamic",
+    "build": "devBuild --package cxs/dynamic"
   },
   "license": "MIT",
   "dependencies": {
@@ -15,8 +15,8 @@
     "dev-tasks": "1.0.0"
   },
   "benchmarks": {
-    "name": "cxs",
-    "useInlineStyles": true,
+    "name": "cxs-dynamic",
+    "useInlineStyles": false,
     "useCSS": true,
     "link": "https://github.com/jxnblk/cxs"
   }
