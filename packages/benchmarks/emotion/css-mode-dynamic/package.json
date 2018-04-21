@@ -1,0 +1,27 @@
+{
+  "name": "table-emotion-css-mode-dynamic-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package emotion/css-mode-dynamic",
+    "build": "devBuild --package emotion/css-mode-dynamic"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "@arr/foreach": "^0.1.0",
+    "@arr/map": "^0.1.0",
+    "emotion": "^8.0.12",
+    "babel-plugin-emotion": "^8.0.12",
+    "react-emotion": "^8.0.12"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "emotion-css-mode-dynamic",
+    "useInlineStyles": false,
+    "useCSS": true,
+    "link": "https://github.com/emotion-js/emotion"
+  }
+}

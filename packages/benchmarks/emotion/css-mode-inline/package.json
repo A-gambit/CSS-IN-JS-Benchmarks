@@ -1,10 +1,10 @@
 {
-  "name": "table-emotion-css-mode-big-table",
+  "name": "table-emotion-css-mode-inline-big-table",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "devServer --package emotion/css-mode",
-    "build": "devBuild --package emotion/css-mode"
+    "start": "devServer --package emotion/css-mode-inline",
+    "build": "devBuild --package emotion/css-mode-inline"
   },
   "license": "MIT",
   "dependencies": {
@@ -19,7 +19,7 @@
     "dev-tasks": "1.0.0"
   },
   "benchmarks": {
-    "name": "emotion-css-mode",
+    "name": "emotion-css-mode-inline",
     "useInlineStyles": true,
     "useCSS": true,
     "link": "https://github.com/emotion-js/emotion"

@@ -1,0 +1,23 @@
+{
+  "name": "table-aphrodite-inline-styles-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package aphrodite/inline-styles",
+    "build": "devBuild --package aphrodite/inline-styles"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "aphrodite": "1.2.0"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "aphrodite-inline-styles",
+    "useInlineStyles": true,
+    "useCSS": true,
+    "link": "https://github.com/Khan/aphrodite"
+  }
+}
