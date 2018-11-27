@@ -9,7 +9,7 @@
   "license": "MIT",
   "devDependencies": {
     "dev-tasks": "1.0.0",
-    "babel-plugin-styled-components": "1.9.0"
+    "babel-plugin-styled-components": "1.9.1"
   },
   "dependencies": {
     "benchmarks-utils": "1.0.0",
