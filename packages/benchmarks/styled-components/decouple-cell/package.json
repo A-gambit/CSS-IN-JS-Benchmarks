@@ -9,11 +9,11 @@
   "license": "MIT",
   "devDependencies": {
     "dev-tasks": "1.0.0",
-    "babel-plugin-styled-components": "1.1.7"
+    "babel-plugin-styled-components": "1.9.1"
   },
   "dependencies": {
     "benchmarks-utils": "1.0.0",
-    "styled-components": "^3.1.6"
+    "styled-components": "4.1.1"
   },
   "benchmarks": {
     "name": "styled-components-decouple-cell",
