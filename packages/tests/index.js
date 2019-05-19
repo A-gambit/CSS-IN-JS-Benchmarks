@@ -10,9 +10,7 @@ const fs = require('fs');
 const { argv } = require('yargs');
 
 const Lighthouse = require('lighthouse');
-const {
-  ChromeLauncher,
-} = require('lighthouse/lighthouse-cli/chrome-launcher.js');
+const ChromeLauncher = require('chrome-launcher');
 
 const packageJson = 'package.json';
 
@@ -21,25 +19,15 @@ const filterPackages = argv._.length ? argv._ : null;
 run();
 
 function launchChromeAndRunLighthouse(url, flags, config) {
-  const launcher = new ChromeLauncher({
+  return ChromeLauncher.launch({
     port: 9222,
     autoSelectChrome: true,
+  }).then(chrome => {
+    flags.port = chrome.port;
+    return Lighthouse(url, flags, config).then(results =>
+      chrome.kill().then(() => results)
+    );
   });
-  return launcher
-    .isDebuggerReady()
-    .catch(() => {
-      if (flags.skipAutolaunch) {
-        return;
-      }
-      return launcher.run();
-    })
-    .then(() => Lighthouse(url, flags, config))
-    .then(results => launcher.kill().then(() => results))
-    .catch(err => {
-      return launcher.kill().then(() => {
-        throw err;
-      }, console.error);
-    });
 }
 
 function getPackageList() {
@@ -79,7 +67,7 @@ function getAverageValue(arr) {
 }
 
 async function runTestCase(url) {
-  const config = require('lighthouse/lighthouse-core/config/perf.json');
+  const config = require('lighthouse/lighthouse-core/config/perf-config');
   const flags = { maxWaitForLoad: 60000, interactive: true };
 
   const mountDuration = [];
@@ -94,11 +82,16 @@ async function runTestCase(url) {
         flags,
         config
       );
-      const values = currentRes.audits['user-timings'].extendedInfo.value;
-      const mountTime = values[2].duration;
+      if (!currentRes.lhr.audits['user-timings'].details) {
+        // sometimes something goes wrong with recording the trace over the page
+        i--;
+        continue;
+      }
+      const values = currentRes.lhr.audits['user-timings'].details.items;
+      const mountTime = values[0].duration;
       mountTime && mountDuration.push(mountTime);
       let curRerenderDuration = [];
-      for (let i = 3; i < values.length; i++) {
+      for (let i = 1; i < values.length; i++) {
         if (!values[i].duration) {
           continue;
         }
