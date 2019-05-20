@@ -1,0 +1,29 @@
+{
+  "name": "table-reshadow-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package reshadow",
+    "build": "devBuild --package reshadow"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "reshadow": "0.0.1-alpha.36"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0",
+    "babel-loader": "8.0.5",
+    "@babel/core": "7.4.0",
+    "@babel/preset-env": "7.4.2",
+    "@babel/preset-react": "7.0.0"
+  },
+  "benchmarks": {
+    "name": "reshadow",
+    "useInlineStyles": false,
+    "useCSS": true,
+    "link": "https://github.com/lttb/reshadow"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    [
+      "reshadow/babel",
+      {
+        "postcss": true
+      }
+    ]
+  ],
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ]
+  ]
+}
