@@ -1,0 +1,23 @@
+{
+  "name": "nano-css-sheet-big-table",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package nano-css/sheet",
+    "build": "devBuild --package nano-css/sheet"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "nano-css": "1.13.0"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "nano-css (using sheet() interface)",
+    "link": "https://github.com/streamich/nano-css/blob/master/docs/sheet.md",
+    "useInlineStyles": true,
+    "useCSS": true
+  }
+}
