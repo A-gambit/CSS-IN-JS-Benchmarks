@@ -12,7 +12,7 @@ Solution | Use CSS | Use Inline-Styles | Mount Time (ms) | Rerender time (ms)
 [aphrodite](https://github.com/Khan/aphrodite) | + | + | 42.25 | 55.48
 [glam-inline-style](https://github.com/threepointone/glam) | + | + | 41.75 | 57.22
 [glam-simple](https://github.com/threepointone/glam) | + | - | 42.67 | 72.69
-[merge-styles](https://github.com/OfficeDev/office-ui-fabric-react/packages/merge-styles) | + | - | 59.2 | 75.77
+[merge-styles](https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/merge-styles) | + | - | 59.2 | 75.77
 [styled-components-inline-styles](https://github.com/styled-components/styled-components/tree/v2) | + | + | 97.6 | 78.03
 [styled-jss-w-o-plugins-v2](https://github.com/cssinjs/styled-jss) | + | - | 119.9 | 78.11
 [styled-jss-w-o-plugins](https://github.com/cssinjs/styled-jss) | + | - | 122.6 | 78.53

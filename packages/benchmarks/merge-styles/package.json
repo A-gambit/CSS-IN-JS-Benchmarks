@@ -17,6 +17,6 @@
   "benchmarks": {
     "name": "merge-styles",
     "useCSS": true,
-    "link": "https://github.com/OfficeDev/office-ui-fabric-react/packages/merge-styles"
+    "link": "https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/merge-styles"
   }
 }
