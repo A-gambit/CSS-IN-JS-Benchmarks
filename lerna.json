@@ -35,7 +35,8 @@
     "packages/benchmarks/styled-jsx/inline-styles",
     "packages/benchmarks/styled-jsx/dynamic",
     "packages/benchmarks/styletron",
-    "packages/benchmarks/reshadow"
+    "packages/benchmarks/reshadow",
+    "packages/benchmarks/css-system"
   ],
   "version": "1.0.0"
 }
