@@ -1,23 +1,23 @@
 {
-  "name": "table-css-system",
+  "name": "table-use-style",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "devServer --package css-system",
-    "build": "devBuild --package css-system"
+    "start": "devServer --package use-style",
+    "build": "devBuild --package use-style"
   },
   "license": "MIT",
   "dependencies": {
     "benchmarks-utils": "1.0.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "styled-system": "^5.1.4"
+    "use-style": "myagoo/use-style#master"
   },
   "devDependencies": {
     "dev-tasks": "1.0.0"
   },
   "benchmarks": {
-    "name": "css-system",
+    "name": "use-style",
     "link": "https://github.com/facebook/react"
   }
 }

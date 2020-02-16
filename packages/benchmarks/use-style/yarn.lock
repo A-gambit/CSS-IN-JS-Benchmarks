@@ -92,6 +92,11 @@
     "@styled-system/core" "^5.1.2"
     "@styled-system/css" "^5.1.4"
 
+hash-sum@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hash-sum/-/hash-sum-2.0.0.tgz#81d01bb5de8ea4a214ad5d6ead1b523460b0b45a"
+  integrity sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==
+
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -169,3 +174,10 @@ styled-system@^5.1.4:
     "@styled-system/typography" "^5.1.2"
     "@styled-system/variant" "^5.1.4"
     object-assign "^4.1.1"
+
+use-style@myagoo/use-style#master:
+  version "0.1.0"
+  resolved "git+ssh://git@github.com/myagoo/use-style.git#e98772f2f0ef819616498629cd0ba0b5c0f45919"
+  dependencies:
+    hash-sum "^2.0.0"
+    styled-system "^5.1.4"
