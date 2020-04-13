@@ -4,7 +4,7 @@
     "packages/tests",
     "packages/benchmarks-utils",
     "packages/dev-tasks",
-    "packages/benchmarks/use-style",
+    "packages/benchmarks/css-system",
     "packages/benchmarks/fela",
     "packages/benchmarks/react-native-web",
     "packages/benchmarks/rockey/rockey",

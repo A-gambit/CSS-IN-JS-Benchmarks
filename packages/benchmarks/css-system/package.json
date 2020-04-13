@@ -1,0 +1,25 @@
+{
+  "name": "table-css-system",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "devServer --package css-system",
+    "build": "devBuild --package css-system"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "benchmarks-utils": "1.0.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "css-system": "0.5.5"
+  },
+  "devDependencies": {
+    "dev-tasks": "1.0.0"
+  },
+  "benchmarks": {
+    "name": "css-system",
+    "useInlineStyles": true,
+    "useCSS": true,
+    "link": "https://github.com/css-system/css-system"
+  }
+}

@@ -1,8 +1,8 @@
 import React from 'react';
-import { useStyle } from 'use-style';
+import { useCss } from 'css-system';
 
 const View = ({ as: Component = 'div', css, ...props }) => {
-  const className = useStyle(css, {});
+  const className = useCss(css);
   return <Component className={className} {...props} />;
 };
 
