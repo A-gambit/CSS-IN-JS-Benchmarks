@@ -5,7 +5,7 @@ Solution | Use CSS | Use Inline-Styles | Mount Time (ms) | Rerender time (ms)
 :--- | :--- | :--- | :--- | :---
 [react (without styles)](https://github.com/facebook/react) | - | - | 17.25 | 39.11
 [react (with inline-styles)](https://github.com/facebook/react) | - | + | 32.8 | 51.68
-[styled-jsx-inline-styles](https://github.com/zeit/styled-jsx) | + | + | 40.67 | 54.32
+[styled-jsx-inline-styles](https://github.com/vercel/styled-jsx) | + | + | 40.67 | 54.32
 [emotion-css-mode](https://github.com/emotion-js/emotion) | + | + | 40.2 | 54.91
 [cxs](https://github.com/jxnblk/cxs) | + | + | 39.87 | 55.28
 [react-css](https://github.com/facebook/react) | + | + | 39.3 | 55.39
@@ -25,7 +25,7 @@ Solution | Use CSS | Use Inline-Styles | Mount Time (ms) | Rerender time (ms)
 [emotion-extract-static](https://github.com/emotion-js/emotion) | + | + | 126.33 | 93.66
 [emotion-decouple](https://github.com/emotion-js/emotion) | + | - | 142.85 | 96.36
 [emotion-simple](https://github.com/emotion-js/emotion) | + | - | 138.08 | 96.94
-[styled-jsx-dynamic](https://github.com/zeit/styled-jsx) | + | - | 155.1 | 122.89
+[styled-jsx-dynamic](https://github.com/vercel/styled-jsx) | + | - | 155.1 | 122.89
 [react-native-web](https://github.com/necolas/react-native-web) | + | + | 238.72 | 140.16
 [styled-components](https://github.com/styled-components/styled-components/tree/v2) | + | - | 182 | 146.84
 [styled-components-decouple-cell](https://github.com/styled-components/styled-components/tree/v2) | + | - | 213.53 | 152.39
